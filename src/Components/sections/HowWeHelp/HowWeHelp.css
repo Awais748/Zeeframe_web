@@ -1,0 +1,329 @@
+.zf-howhelp {
+  background: var(--color-black-210, #0b0b0b);
+  padding: 60px 0;
+  box-sizing: border-box;
+  width: 100%;
+}
+
+/* ── Section Header: label+title LEFT | desc RIGHT ── */
+.zf-howhelp-header {
+  display: flex;
+  align-items: center;
+  justify-content: space-between;
+  width: 100%;
+  margin-bottom: 60px;
+  gap: 40px;
+}
+
+.zf-howhelp-header-left {
+  display: flex;
+  flex-direction: column;
+  gap: 16px;
+  align-items: flex-start;
+  max-width: 600px;
+  flex-shrink: 0;
+}
+
+/* Inter Regular 14/20, yellow */
+.zf-howhelp-label {
+  font-family: "Inter", sans-serif;
+  font-size: 14px;
+  font-weight: 400;
+  line-height: 20px;
+  color: #f3fe00;
+  margin: 0;
+}
+
+/* Inter Tight SemiBold 36/44, -0.72px */
+.zf-howhelp-title {
+  font-family: "Inter Tight", sans-serif;
+  font-weight: 600;
+  font-size: 36px;
+  line-height: 44px;
+  letter-spacing: -0.72px;
+  color: #ffffff;
+  margin: 0;
+}
+
+/* Inter Regular 16/24, #d4d4d8, width=630px */
+.zf-howhelp-desc {
+  font-family: "Inter", sans-serif;
+  font-size: 16px;
+  font-weight: 400;
+  line-height: 24px;
+  color: #d4d4d8;
+  width: 630px;
+  flex-shrink: 0;
+  margin: 0;
+}
+
+/* ── Grid ── */
+.zf-svc-grid {
+  display: flex;
+  flex-direction: column;
+  border-radius: 14px;
+  overflow: hidden;
+}
+
+.zf-svc-row {
+  display: flex;
+}
+
+.zf-svc-cell {
+  background: #0b0b0b;
+  padding: 24px;
+  min-height: 253px;
+  display: flex;
+  flex-direction: column;
+  justify-content: space-between;
+  align-items: flex-start;
+  flex: 1 0 0;
+  border-top: 1px solid #373737;
+  border-left: 1px solid #373737;
+  position: relative;
+  overflow: hidden;
+  transition: background 0.25s ease;
+  cursor: default;
+  box-sizing: border-box;
+}
+
+.zf-svc-row .zf-svc-cell:last-child {
+  border-right: 1px solid #373737;
+}
+
+.zf-svc-row:last-child .zf-svc-cell {
+  border-bottom: 1px solid #373737;
+}
+
+.zf-svc-row:first-child .zf-svc-cell:first-child {
+  border-radius: 14px 0 0 0;
+}
+.zf-svc-row:first-child .zf-svc-cell:last-child {
+  border-radius: 0 14px 0 0;
+}
+.zf-svc-row:last-child .zf-svc-cell:first-child {
+  border-radius: 0 0 0 14px;
+}
+.zf-svc-row:last-child .zf-svc-cell:last-child {
+  border-radius: 0 0 14px 0;
+}
+
+.zf-svc-cell:not(.zf-svc-cta):hover {
+  background: radial-gradient(
+      94% 121.34% at 14.15% 0.48%,
+      rgba(243, 254, 0, 0.4) 0%,
+      rgba(0, 0, 0, 0) 56%
+    ),
+    linear-gradient(
+      180deg,
+      rgba(255, 255, 255, 0.05) 0%,
+      rgba(255, 255, 255, 0.01) 100%
+    ),
+    #151515;
+  cursor: pointer;
+}
+
+.zf-svc-cell:not(.zf-svc-cta):hover .zf-svc-icon {
+  transform: scale(1.08);
+}
+
+.zf-svc-icon {
+  width: 40px;
+  height: 40px;
+  display: flex;
+  align-items: center;
+  justify-content: center;
+  overflow: hidden;
+  flex-shrink: 0;
+  transition: transform 0.25s ease;
+}
+
+.zf-svc-icon svg,
+.zf-svc-icon img {
+  width: 30px;
+  height: 30px;
+  display: block;
+  flex-shrink: 0;
+}
+
+.zf-svc-text {
+  display: flex;
+  flex-direction: column;
+  gap: 8px;
+}
+
+.zf-svc-title {
+  font-family: "Inter Tight", sans-serif;
+  font-weight: 600;
+  font-size: 18px;
+  line-height: 28px;
+  color: #ffffff;
+  margin: 0;
+}
+
+/* Inter Regular 14/20, #d4d4d8 */
+.zf-svc-desc {
+  font-family: "Inter", sans-serif;
+  font-size: 14px;
+  font-weight: 400;
+  line-height: 20px;
+  color: #d4d4d8;
+  margin: 0;
+}
+
+/* CTA cell */
+.zf-svc-cta {
+  background: #ffffff;
+  border-top: 0.6px solid #cdcdcd;
+  border-left: 0.6px solid #cdcdcd;
+  cursor: default;
+  transition: background 0.25s ease;
+}
+
+.zf-svc-row .zf-svc-cta:last-child {
+  border-right: 0.6px solid #cdcdcd;
+}
+
+.zf-svc-row:last-child .zf-svc-cta {
+  border-bottom: 0.6px solid #cdcdcd;
+}
+
+.zf-svc-cta:hover {
+  background: #f3fe00;
+}
+
+/* Card hover → button white with black icon */
+.zf-svc-cta:hover .zf-btn-black {
+  background: #ffffff;
+  color: #0b0b0b;
+  border-color: #0b0b0b;
+}
+
+/* Button hover → transparent */
+.zf-svc-cta:hover .zf-btn-black:hover {
+  background: transparent;
+  color: #0b0b0b;
+  border-color: #0b0b0b;
+}
+.zf-svc-cta-title {
+  font-family: "Inter Tight", sans-serif;
+  font-weight: 600;
+  font-size: 20px;
+  line-height: 30px;
+  color: #27272a;
+  margin: 0 0 8px 0;
+}
+
+.zf-svc-cta-desc {
+  font-family: "Inter", sans-serif;
+  font-size: 14px;
+  font-weight: 400;
+  line-height: 20px;
+  color: #52525b;
+  margin: 0 0 16px 0;
+}
+
+/* ── Tablet ≤1100px ── */
+@media (max-width: 1100px) {
+  .zf-howhelp {
+    padding: 48px 0;
+  }
+
+  .zf-howhelp-header {
+    flex-direction: column;
+    align-items: flex-start;
+    gap: 24px;
+    margin-bottom: 48px;
+  }
+
+  .zf-howhelp-header-left {
+    max-width: 100%;
+  }
+
+  .zf-howhelp-desc {
+    width: 100%;
+  }
+
+  .zf-svc-row {
+    flex-wrap: wrap;
+  }
+
+  .zf-svc-cell {
+    flex: 1 1 50%;
+    min-width: 50%;
+    height: auto;
+    min-height: 253px;
+    box-sizing: border-box;
+  }
+}
+
+/* ── Mobile ≤640px ── */
+@media (max-width: 640px) {
+  .zf-howhelp {
+    padding: 32px 0 48px;
+  }
+
+  .zf-howhelp-header {
+    gap: 16px;
+    margin-bottom: 32px;
+  }
+
+  .zf-howhelp-title {
+    font-size: 28px;
+    line-height: 36px;
+    letter-spacing: -0.56px;
+  }
+
+  .zf-howhelp-desc {
+    font-size: 15px;
+    line-height: 23px;
+  }
+
+  .zf-svc-row {
+    flex-direction: column;
+    flex-wrap: nowrap;
+  }
+
+  .zf-svc-cell {
+    flex: none;
+    width: 100%;
+    height: auto;
+    min-height: auto;
+    gap: 40px;
+    justify-content: flex-start;
+    padding: 24px;
+    border-top: 1px solid #373737;
+    border-left: 1px solid #373737;
+    border-right: 1px solid #373737;
+    border-bottom: 1px solid #373737;
+    border-radius: 0 !important;
+  }
+
+  .zf-svc-row:first-child .zf-svc-cell:first-child {
+    border-radius: 14px 14px 0 0 !important;
+  }
+
+  .zf-svc-row:last-child .zf-svc-cell:last-child {
+    border-radius: 0 0 14px 14px !important;
+  }
+
+  .zf-svc-title {
+    font-family: "Inter", sans-serif;
+    font-weight: 600;
+    font-size: 16px;
+    line-height: 24px;
+  }
+
+  .zf-svc-cta {
+    border: 1px solid #373737;
+  }
+
+  .zf-svc-cell:not(.zf-svc-cta):hover {
+    background: #0b0b0b;
+    cursor: default;
+  }
+
+  .zf-svc-cell:not(.zf-svc-cta):hover .zf-svc-icon {
+    transform: none;
+  }
+}

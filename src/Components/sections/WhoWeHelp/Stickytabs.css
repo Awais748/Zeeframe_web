@@ -1,0 +1,52 @@
+.zf-sticky-tabs-container {
+  position: sticky;
+  top: 92px;
+  z-index: 90;
+  width: 100%;
+  background: #0b0b0b;
+  backdrop-filter: blur(8px);
+  padding: 0;
+  box-sizing: border-box;
+}
+
+.zf-sticky-tabs-inner {
+  display: flex;
+  align-items: center;
+  gap: 8px;
+  scrollbar-width: none;
+  -ms-overflow-style: none;
+}
+
+.zf-sticky-tabs-inner::-webkit-scrollbar {
+  display: none;
+}
+
+.zf-sticky-tab-btn {
+  background: transparent;
+  border: none;
+  font-family: "Inter", sans-serif;
+  font-size: 14px;
+  font-weight: 500;
+  color: #71717a;
+  padding: 8px 16px;
+  border-radius: 6px;
+  cursor: pointer;
+  white-space: nowrap;
+  transition: background 0.2s ease, color 0.2s ease;
+}
+
+.zf-sticky-tab-btn:hover {
+  color: #d4d4d8;
+}
+
+.zf-sticky-tab-btn.active {
+  background: #282601;
+  color: #c1c300;
+}
+
+@media (max-width: 768px) {
+  .zf-sticky-tab-btn {
+    font-size: 13px;
+    padding: 6px 12px;
+  }
+}

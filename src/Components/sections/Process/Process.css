@@ -1,0 +1,462 @@
+.zf-process {
+  background: #faf9f4;
+  box-sizing: border-box;
+  width: 100%;
+  padding: 24px 16px;
+  display: flex;
+  flex-direction: column;
+  align-items: center;
+}
+
+.zf-process-inner {
+  width: 100%;
+  display: flex;
+  flex-direction: column;
+  gap: 24px;
+}
+
+/* ── HEADER BLOCK ─────────────────────────── */
+.zf-process-header {
+  display: flex;
+  flex-direction: column;
+  gap: 12px;
+}
+
+.zf-process-header-left {
+  display: flex;
+  flex-direction: column;
+  gap: 8px;
+}
+
+.zf-process-label {
+  font-family: "Inter", sans-serif;
+  font-size: 14px;
+  font-weight: 400;
+  line-height: 20px;
+  color: #18181b;
+  margin: 0;
+}
+
+.zf-process-title {
+  font-family: "Inter Tight", sans-serif;
+  font-size: 24px;
+  font-weight: 600;
+  line-height: 32px;
+  letter-spacing: 0;
+  color: #27272a;
+  margin: 0;
+}
+
+.zf-process-title-desktop {
+  display: none;
+}
+.zf-process-title-mobile {
+  display: inline;
+}
+
+.zf-process-desc {
+  font-family: "Inter", sans-serif;
+  font-size: 14px;
+  font-weight: 400;
+  line-height: 20px;
+  color: #52525b;
+  margin: 0;
+}
+
+/* ── PROCESS CARD ────────────────────────── */
+.zf-proc-card {
+  background: #ffffff;
+  box-sizing: border-box;
+  position: relative;
+  transition: background 0.25s ease;
+  display: flex;
+  flex-direction: column;
+  gap: 32px;
+  padding: 24px;
+}
+
+.zf-proc-card:nth-child(1) {
+  border: 0.6px solid #cdcdcd;
+  border-radius: 14px 14px 0 0;
+}
+.zf-proc-card:nth-child(2) {
+  border: none;
+  border-left: 0.6px solid #cdcdcd;
+  border-right: 0.6px solid #cdcdcd;
+  border-radius: 0;
+}
+.zf-proc-card:nth-child(3) {
+  border: none;
+  border-left: 0.6px solid #cdcdcd;
+  border-right: 0.6px solid #cdcdcd;
+  border-top: 0.6px solid #cdcdcd;
+  border-radius: 0;
+}
+
+.zf-proc-card:not(.highlighted):not(.cta-card):hover {
+  background: #e7e5e4;
+  cursor: pointer;
+}
+.zf-proc-card.highlighted {
+  background: #e7e5e4;
+}
+
+/* ── ICON ────────────────────────────────── */
+.zf-proc-icon-mobile {
+  width: 30px;
+  height: 30px;
+  position: relative;
+  flex-shrink: 0;
+}
+.zf-proc-icon-mobile img {
+  position: absolute;
+  inset: 0;
+  width: 100%;
+  height: 100%;
+  display: block;
+  object-fit: contain;
+}
+
+.zf-proc-icon-desktop {
+  display: none;
+}
+
+/* ── CARD CONTENT ────────────────────────── */
+.zf-proc-content {
+  display: flex;
+  flex-direction: column;
+  width: 100%;
+}
+
+.zf-proc-content--gap12 {
+  gap: 12px;
+}
+.zf-proc-content--gap24 {
+  gap: 24px;
+}
+
+.zf-proc-title {
+  font-family: "Inter", sans-serif;
+  font-size: 16px;
+  font-weight: 600;
+  line-height: 24px;
+  color: #27272a;
+  margin: 0;
+  white-space: nowrap;
+}
+
+/* ── BULLETS ─────────────────────────────── */
+.zf-proc-bullets {
+  display: flex;
+  flex-direction: column;
+  gap: 8px;
+}
+
+.zf-proc-bullet {
+  display: flex;
+  gap: 8px;
+  align-items: flex-start;
+  width: 100%;
+}
+
+.zf-proc-bullet-star {
+  display: flex;
+  align-items: center;
+  padding-top: 5px;
+  flex-shrink: 0;
+}
+
+.zf-star-icon {
+  width: 12px;
+  height: 12px;
+  position: relative;
+  flex-shrink: 0;
+  display: block;
+}
+
+.zf-star-icon img {
+  position: absolute;
+  inset: 10%;
+  width: 80%;
+  height: 80%;
+  display: block;
+}
+
+.zf-proc-bullet span {
+  font-family: "Inter", sans-serif;
+  font-size: 14px;
+  font-weight: 400;
+  line-height: 20px;
+  color: #52525b;
+  flex: 1 0 0;
+  min-width: 1px;
+}
+
+/* ── CTA CARD ────────────────────────────── */
+.zf-proc-card.cta-card {
+  padding: 0;
+  gap: 0;
+  overflow: hidden;
+  border: none;
+  border-bottom: 0.6px solid #cdcdcd;
+  border-right: 0.6px solid #cdcdcd;
+  border-radius: 0 0 14px 14px;
+  flex-direction: column;
+  height: 399px;
+}
+
+.zf-proc-top {
+  flex: 1;
+  min-height: 0;
+  position: relative;
+  overflow: hidden;
+  background: #000;
+}
+
+.zf-proc-bg-img {
+  position: absolute;
+  inset: 0;
+  width: 100%;
+  height: 100%;
+  object-fit: cover;
+  display: block;
+  opacity: 0.85;
+}
+
+.zf-proc-bottom {
+  background: #09090b;
+  padding: 20px;
+  display: flex;
+  flex-direction: column;
+  gap: 24px;
+  box-sizing: border-box;
+  flex-shrink: 0;
+  width: 100%;
+}
+
+.zf-proc-cta-copy {
+  display: flex;
+  flex-direction: column;
+  gap: 10px;
+}
+
+.zf-proc-cta-title {
+  font-family: "Inter Tight", sans-serif;
+  font-size: 20px;
+  font-weight: 600;
+  line-height: 21px;
+  color: #ffffff;
+  margin: 0;
+}
+
+.zf-proc-cta-sub {
+  font-family: "Inter Tight", sans-serif;
+  font-size: 14px;
+  font-weight: 400;
+  line-height: 21px;
+  color: #e4e4e7;
+  margin: 0;
+}
+
+/* ── CTA BUTTON ──────────────────────────── */
+.zf-proc-cta-btn {
+  width: 100%;
+  height: 40px;
+  padding: 8px 16px;
+  border-radius: 999px;
+  background: #ffffff;
+  border: 1px solid transparent;
+  cursor: pointer;
+  display: inline-flex;
+  align-items: center;
+  justify-content: center;
+  gap: 8px;
+  font-family: "Inter", sans-serif;
+  font-size: 16px;
+  font-weight: 500;
+  line-height: 24px;
+  color: #000000;
+  text-decoration: none;
+  transition: background 0.2s ease, color 0.2s ease, border-color 0.2s ease;
+  box-sizing: border-box;
+  flex-shrink: 0;
+  position: relative;
+  min-width: 190px; /* ← yeh add karo */
+}
+
+.zf-proc-cta-btn:hover {
+  background: #000000;
+  border-color: #f3fe00;
+  color: transparent;
+}
+
+.zf-proc-cta-btn:hover::after {
+  content: "Let's Talk";
+  position: absolute;
+  color: #f3fe00;
+  font-family: "Inter", sans-serif;
+  font-size: 16px;
+  font-weight: 500;
+  line-height: 24px;
+}
+
+.zf-proc-cta-btn:hover .zf-proc-cta-btn-arrow {
+  visibility: hidden;
+}
+
+.zf-proc-cta-btn-arrow {
+  width: 16px;
+  height: 16px;
+  display: block;
+  flex-shrink: 0;
+}
+
+/* ── DESKTOP ≥1024px ─────────────────────── */
+@media (min-width: 1024px) {
+  .zf-process {
+    padding: 60px 0;
+    align-items: flex-start;
+  }
+
+  .zf-process-inner {
+    max-width: none;
+    gap: 48px;
+  }
+
+  .zf-process-header {
+    flex-direction: row;
+    align-items: center;
+    gap: 60px;
+  }
+
+  .zf-process-header-left {
+    flex: 1;
+    min-width: 0;
+    gap: 16px;
+  }
+
+  .zf-process-title {
+    font-size: 36px;
+    line-height: 44px;
+    letter-spacing: -0.72px;
+    white-space: pre-wrap;
+  }
+
+  .zf-process-title-mobile {
+    display: none;
+  }
+  .zf-process-title-desktop {
+    display: inline;
+  }
+
+  .zf-process-desc {
+    font-size: 16px;
+    line-height: 24px;
+    flex: 1;
+    min-width: 0;
+  }
+
+  .zf-proc-cards {
+    flex-direction: row;
+    align-items: stretch;
+  }
+
+  .zf-proc-card {
+    flex: 1;
+    min-height: 399px;
+    gap: 0;
+    justify-content: space-between;
+  }
+
+  .zf-proc-card:nth-child(1),
+  .zf-proc-card:nth-child(2),
+  .zf-proc-card:nth-child(3) {
+    border: 0.6px solid #cdcdcd;
+    border-radius: 0;
+  }
+
+  .zf-proc-card:nth-child(1) {
+    border-radius: 14px 0 0 14px;
+  }
+
+  .zf-proc-card:nth-child(2),
+  .zf-proc-card:nth-child(3) {
+    border-left: none;
+  }
+
+  .zf-proc-icon-mobile {
+    display: none;
+  }
+  .zf-proc-icon-desktop {
+    display: block;
+    width: 40px;
+    height: 40px;
+    position: relative;
+    flex-shrink: 0;
+    overflow: hidden;
+  }
+  .zf-proc-icon-desktop img {
+    position: absolute;
+    top: 50%;
+    left: 50%;
+    transform: translate(-50%, -50%);
+    width: 30px;
+    height: 30px;
+    display: block;
+    object-fit: contain;
+    transition: transform 0.25s ease;
+  }
+  .zf-proc-card:not(.highlighted):not(.cta-card):hover
+    .zf-proc-icon-desktop
+    img {
+    transform: translate(-50%, -50%) scale(1.1);
+  }
+
+  .zf-proc-title {
+    font-family: "Inter Tight", sans-serif;
+    font-size: 18px;
+    font-weight: 600;
+    line-height: 28px;
+    white-space: nowrap;
+  }
+
+  .zf-proc-content--gap12,
+  .zf-proc-content--gap24 {
+    gap: 24px;
+  }
+
+  .zf-proc-card.cta-card {
+    flex: 1;
+    min-height: 399px;
+    height: auto;
+    border: none;
+    border-top: 0.6px solid #cdcdcd;
+    border-right: 0.6px solid #cdcdcd;
+    border-bottom: 0.6px solid #cdcdcd;
+    border-radius: 0 14px 14px 0;
+    overflow: hidden;
+  }
+
+  .zf-proc-bottom {
+    gap: 32px;
+  }
+
+  .zf-proc-cta-btn {
+    width: auto;
+    align-self: flex-start;
+  }
+}
+
+/* ── TABLET 768px – 1023px ───────────────── */
+@media (min-width: 768px) and (max-width: 1023px) {
+  .zf-process {
+    padding: 48px 24px;
+    align-items: flex-start;
+  }
+  .zf-process-inner {
+    max-width: none;
+  }
+  .zf-proc-top {
+    min-height: 220px;
+  }
+}
