@@ -1,6 +1,3 @@
-// StartProject.jsx — Pixel-perfect recreation from Figma node 60212:14026
-// Pure Tailwind CSS — no external CSS file
-
 const imgNoise =
   "https://www.figma.com/api/mcp/asset/76dbde0c-ef89-42bc-8ae3-539758899543";
 const img002 =
@@ -19,7 +16,7 @@ const imgArrow =
 export default function StartProject() {
   return (
     // Section wrapper: bg #0E0E0E, py 32px, flex row, overflow hidden
-    <section className="bg-[#0e0e0e] relative overflow-hidden py-[32px] max-lg:py-12 max-sm:py-10">
+    <section className="bg-[#0e0e0e] relative overflow-hidden py-8 max-lg:py-12 max-sm:py-10">
       <div className="container flex items-center justify-between max-lg:flex-col max-lg:items-start max-lg:gap-10">
         {/* ── Background glows ── */}
 
@@ -91,7 +88,6 @@ export default function StartProject() {
               Start your UI/UX&nbsp; design project today
             </h2>
 
-            {/* Subtext: Inter Tight Regular 18/28 #FAFAFA */}
             <p
               className="text-[#fafafa] text-[18px] leading-7 m-0 font-normal max-sm:text-[16px]"
               style={{ fontFamily: "'Inter Tight', sans-serif" }}
@@ -101,9 +97,8 @@ export default function StartProject() {
             </p>
           </div>
 
-          {/* CTA Button: #F3FE00 pill, Inter Medium 16/24 black */}
-         <button
-  className="flex items-center gap-2 bg-[#f3fe00] px-4 py-2 rounded-[99999px] border border-transparent cursor-pointer w-fit transition-colors duration-200 hover:bg-transparent hover:border-[#f3fe00] group relative"
+          <button
+            className="flex items-center gap-2 bg-[#f3fe00] px-4 py-2 rounded-[99999px] border border-transparent cursor-pointer w-fit transition-colors duration-200 hover:bg-transparent hover:border-[#f3fe00] group relative"
             style={{ fontFamily: "'Inter', sans-serif" }}
           >
             <span className="text-black text-[16px] leading-6 font-medium whitespace-nowrap group-hover:text-transparent relative">
@@ -120,25 +115,21 @@ export default function StartProject() {
           </button>
         </div>
 
-        {/* ── Right: 3D Star image ── */}
-        {/* Container 300×300, two layered images: large (293px) offset left, small (104px) top-right */}
         <div
-          className="relative shrink-0 max-lg:self-end max-sm:hidden"
+          className="relative shrink-0 max-lg:self-auto "
           style={{ width: 300, height: 300 }}
         >
-          {/* Large star — 293×293, left -15.68px top 0 */}
           <img
             src={img002}
             alt="3D star decoration"
-            className="absolute object-cover"
+            className="absolute object-cover "
             style={{ width: 293.18, height: 293.18, left: -15.68, top: 0 }}
           />
-          {/* Small star — 103.6×103.6, left 173.86px top 12.95px */}
           <img
             src={img002}
             alt=""
             aria-hidden="true"
-            className="absolute object-cover"
+            className="absolute object-cover "
             style={{ width: 103.64, height: 103.64, left: 173.86, top: 12.95 }}
           />
         </div>

@@ -1,15 +1,17 @@
-import "./Process.css";
+import cardicon1 from "../../../assets/icons/processcard1.svg";
+import cardicon2 from "../../../assets/icons/processcard2.svg";
+import cardicon3 from "../../../assets/icons/processcard3.svg";
+import cardicon4 from "../../../assets/icons/processcardlist.svg";
+import cardupperimg from "../../../assets/images/processcardimg.jpg";
 
-const iconDiscovery = "https://www.figma.com/api/mcp/asset/22c9c159-6912-492a-899c-c36e2989fa24";
-const iconIA        = "https://www.figma.com/api/mcp/asset/f72cd2b1-2f07-4f8d-ba5f-d8d006c0db9b"; 
-const iconDesign    = "https://www.figma.com/api/mcp/asset/2872b4ff-81e1-469e-9a67-28b809b12b05";  
+import SectionHeader from "../../ui/SectionHeader";
+import { Button } from "../../ui/Button";
 
-// Star bullet icon
-const iconStar      = "https://www.figma.com/api/mcp/asset/ee5f0094-9cf1-485b-bb12-fb0812d978eb";
-
-// CTA card
-const procCardBg    = "https://www.figma.com/api/mcp/asset/f20c9a5e-5236-4ce4-87d1-bc55036e1ef6";
-const iconArrow     = "https://www.figma.com/api/mcp/asset/7f501b3e-6860-43c1-9570-80010f1d21a9";
+const iconDiscovery = cardicon1;
+const iconIA = cardicon2;
+const iconDesign = cardicon3;
+const iconStar = cardicon4;
+const procCardBg = cardupperimg;
 
 const PROCESS_CARDS = [
   {
@@ -17,7 +19,6 @@ const PROCESS_CARDS = [
     icon: iconDiscovery,
     iconAlt: "Discovery phase icon",
     title: "Discovery & Research",
-    contentGap: "zf-proc-content--gap12",   
     bullets: [
       "Kickoff workshop and stakeholder alignment in FigJam.",
       "User research, competitive benchmarking, and analytics review.",
@@ -29,7 +30,6 @@ const PROCESS_CARDS = [
     icon: iconIA,
     iconAlt: "Information architecture icon",
     title: "Information Architecture & Flows",
-    contentGap: "zf-proc-content--gap24",
     bullets: [
       "User journey mapping and sitemap design.",
       "Task flows for critical user actions.",
@@ -41,7 +41,6 @@ const PROCESS_CARDS = [
     icon: iconDesign,
     iconAlt: "Design and testing icon",
     title: "Design & Testing",
-    contentGap: "zf-proc-content--gap24",
     bullets: [
       "High-fidelity UI design in Figma with Figma Make and Google Stitch for rapid exploration.",
       "Custom visual language, typography system, and color tokens.",
@@ -50,115 +49,121 @@ const PROCESS_CARDS = [
   },
 ];
 
-
-function ProcessBullet({ text }) {
-  return (
-    <div className="zf-proc-bullet">
-      <div className="zf-proc-bullet-star">
-        <span className="zf-star-icon">
-          <img src={iconStar} alt="" aria-hidden="true" />
-        </span>
-      </div>
-      <span>{text}</span>
-    </div>
-  );
-}
-
-function ProcessCard({ icon, iconAlt, title, bullets, contentGap, highlighted = false }) {
-  return (
-    <article
-      className={`zf-proc-card${highlighted ? " highlighted" : ""}`}
-      aria-label={title}
-    >
-      {/* Mobile icon: bare 30×30 */}
-      <div className="zf-proc-icon-mobile" aria-hidden="true">
-        <img src={icon} alt={iconAlt} />
-      </div>
-
-      {/* Desktop icon: 40×40 overflow-clip wrapper with 30×30 centered inside */}
-      <div className="zf-proc-icon-desktop" aria-hidden="true">
-        <img src={icon} alt={iconAlt} />
-      </div>
-
-      {/* Content: title + bullets */}
-      <div className={`zf-proc-content ${contentGap}`}>
-        <p className="zf-proc-title">{title}</p>
-        <div className="zf-proc-bullets">
-          {bullets.map((text) => (
-            <ProcessBullet key={text} text={text} />
-          ))}
-        </div>
-      </div>
-    </article>
-  );
-}
-
-/** CTA card — image area top, dark bottom */
-function ProcessCtaCard() {
-  return (
-    <article className="zf-proc-card cta-card" aria-label="Start your project">
-      {/* Image area */}
-      <div className="zf-proc-top" aria-hidden="true">
-        <img
-          className="zf-proc-bg-img"
-          src={procCardBg}
-          alt=""
-          loading="lazy"
-        />
-      </div>
-
-      {/* Dark bottom */}
-      <div className="zf-proc-bottom">
-        <div className="zf-proc-cta-copy">
-          <p className="zf-proc-cta-title">Want this process for your product?</p>
-          <p className="zf-proc-cta-sub">
-            Tell us about your project and get a tailored design roadmap within
-            24 hours.
-          </p>
-        </div>
-        <a href="/contact" className="zf-proc-cta-btn">
-          Start Your Project
-          <img
-            className="zf-proc-cta-btn-arrow"
-            src={iconArrow}
-            alt=""
-            aria-hidden="true"
-          />
-        </a>
-      </div>
-    </article>
-  );
-}
-
 export default function Process({ id }) {
   return (
-    <section id={id} className="zf-process">
+    <section
+      id={id}
+      className="w-full bg-[#faf9f4] py-[60px] max-[1100px]:py-12 max-[640px]:py-8"
+    >
       <div className="container">
+        <SectionHeader
+          label="Process"
+          title={
+            <>
+              <span className="hidden min-[1024px]:inline">
+                Our UI/UX&nbsp; Design Process
+              </span>
+              <span className="min-[1024px]:hidden">
+                Our UI UX Design Process
+              </span>
+            </>
+          }
+          description="Every UI UX design engagement follows a clear five-phase sprint. Timelines typically run 4 to 12 weeks based on product complexity."
+          theme="light"
+          labelColor="#27272a"
+        />
 
-        <div className="zf-process-inner">
-          <div className="zf-process-header">
-            <div className="zf-process-header-left">
-              <p className="zf-process-label">Process</p>
-             
-              <p className="zf-process-title">
-                <span className="zf-process-title-mobile">Our UI UX Design Process</span>
-                <span className="zf-process-title-desktop">{`Our UI/UX\u00A0 Design Process`}</span>
-              </p>
+        {/* ── Cards row ── */}
+        <div className="flex rounded-[14px] overflow-hidden border border-[#cdcdcd] max-[1024px]:grid max-[1024px]:grid-cols-2 max-[640px]:grid-cols-1">
+          {/* ── 3 process cards ── */}
+          {PROCESS_CARDS.map((card) => (
+            <article
+              key={card.id}
+              aria-label={card.title}
+              className="
+                group bg-white flex flex-col justify-between
+                p-6 min-h-[399px] flex-1
+                border-r border-[#cdcdcd]
+                transition-colors duration-300 hover:bg-[#e7e5e4] cursor-pointer
+                max-[1024px]:border-b max-[1024px]:last:border-r-0
+                max-[640px]:min-h-0 max-[640px]:gap-8 max-[640px]:justify-start max-[640px]:border-r-0
+              "
+            >
+              {/* Icon — top */}
+              <div className="w-10 h-10 flex items-center justify-center shrink-0 overflow-hidden transition-transform duration-300">
+                <img
+                  src={card.icon}
+                  alt={card.iconAlt}
+                  className="w-[30px] h-[30px] object-contain block"
+                />
+              </div>
+
+              {/* Title + bullets — bottom */}
+              <div className="flex flex-col gap-6">
+                <p className="font-['Inter_Tight'] font-semibold text-lg leading-7 text-[#27272a] m-0">
+                  {card.title}
+                </p>
+                <div className="flex flex-col gap-2">
+                  {card.bullets.map((text) => (
+                    <div key={text} className="flex gap-2 items-start">
+                      <div className="pt-[5px] shrink-0">
+                        <img
+                          src={iconStar}
+                          alt=""
+                          aria-hidden="true"
+                          className="w-3 h-3 block"
+                        />
+                      </div>
+                      <span className="font-['Inter'] text-sm font-normal leading-5 text-[#52525b]">
+                        {text}
+                      </span>
+                    </div>
+                  ))}
+                </div>
+              </div>
+            </article>
+          ))}
+
+          {/* ── CTA card ── */}
+          <article
+            aria-label="Start your project"
+            className="
+              flex-1 flex flex-col overflow-hidden rounded-r-[14px]
+              min-h-[399px]
+              max-[1024px]:col-span-2 max-[640px]:col-span-1 max-[640px]:rounded-none max-[640px]:rounded-b-[14px]
+            "
+          >
+            {/* BG image — fills remaining space */}
+            <div className="flex-1 relative overflow-hidden min-h-[200px]">
+              <img
+                src={procCardBg}
+                alt=""
+                loading="lazy"
+                className="absolute inset-0 w-full h-full object-cover block"
+              />
             </div>
-            <p className="zf-process-desc">
-              Every UI UX design engagement follows a clear five-phase sprint.
-              Timelines typically run 4 to 12 weeks based on product complexity.
-            </p>
-          </div>
 
-          <div className="zf-proc-cards  grid grid-cols-4">
-            {PROCESS_CARDS.map((card) => (
-              <ProcessCard key={card.id} {...card} />
-            ))}
-            <ProcessCtaCard />
-          </div>
+            {/* Dark bottom panel */}
+            <div className="bg-[#09090b] p-5 flex flex-col gap-6 shrink-0">
+              <div className="flex flex-col gap-[10px]">
+                <p className="font-['Inter_Tight'] font-semibold text-[20px] leading-[28px] text-white m-0">
+                  Want this process for your product?
+                </p>
+                <p className="font-['Inter_Tight'] text-sm font-normal leading-[21px] text-[#e4e4e7] m-0">
+                  Tell us about your project and get a tailored design roadmap
+                  within 24 hours.
+                </p>
+              </div>
+              <Button
+                variant="white"
+                href="/contact"
+                className="w-fit px-5 py-2.5 text-base font-medium !bg-white !text-black !border-white hover:!bg-black hover:!border-[#f3fe00] hover:!text-[#f3fe00]"
+              >
+                Start Your Project
+              </Button>
+            </div>
+          </article>
         </div>
-
       </div>
     </section>
   );
