@@ -1,10 +1,12 @@
 @import url("https://fonts.googleapis.com/css2?family=Inter+Tight:ital,wght@0,100..900;1,100..900&display=swap");
 @import url("https://fonts.googleapis.com/css2?family=Inter:wght@100..900&display=swap");
+@import url("https://fonts.googleapis.com/css2?family=Geologica:wght@100..900&display=swap");
 @import "tailwindcss";
 
 body {
   font-family: "Inter Tight";
   font-family: "Inter", sans-serif;
+  font-family: "Geologica";
 }
 
 .container {
@@ -25,4 +27,47 @@ body {
   .container {
     padding: 0 16px;
   }
+}
+
+.logo-slider {
+  width: 100%;
+  overflow: hidden;
+  position: relative;
+}
+
+/* Track */
+.logo-track {
+  display: flex;
+  gap: 2rem;
+  width: max-content;
+  animation: logo-scroll 10s linear infinite;
+}
+
+.team-slider {
+  display: flex;
+  width: max-content;
+  animation: logo-scroll 30s linear infinite;
+}
+
+/* Logos */
+.logo-track img {
+  width: auto;
+  object-fit: contain;
+  flex-shrink: 0;
+}
+
+/* Animation */
+@keyframes logo-scroll {
+  from {
+    transform: translateX(0);
+  }
+
+  to {
+    transform: translateX(-50%);
+  }
+}
+
+/* Pause on hover (optional) */
+.logo-slider:hover .logo-track {
+  animation-play-state: paused;
 }

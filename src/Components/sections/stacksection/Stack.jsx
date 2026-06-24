@@ -1,12 +1,12 @@
 import { useState, useRef } from "react";
-import figmaImg from "../../../assets/images/stack/figma.png";
-import figjamImg from "../../../assets/images/stack/figjam.png";
-import framerImg from "../../../assets/images/stack/framer.png";
-import penpotImg from "../../../assets/images/stack/penpot.png";
-import sketchImg from "../../../assets/images/stack/sketch.png";
-import axureImg from "../../../assets/images/stack/axure.png";
-import protopieImg from "../../../assets/images/stack/protopie.png";
-import adobexdImg from "../../../assets/images/stack/adobexd.png";
+import figmaImg from "../../../assets/images/figma.png";
+import figjamImg from "../../../assets/images/figjam.png";
+import framerImg from "../../../assets/images/framer.png";
+import penpotImg from "../../../assets/images/penpot.png";
+import sketchImg from "../../../assets/images/sketch.png";
+import axureImg from "../../../assets/images/axure.png";
+import protopieImg from "../../../assets/images/protopie.png";
+import adobexdImg from "../../../assets/images/adobexd.png";
 
 const TABS = [
   "UI/UX Design",

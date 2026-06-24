@@ -14,10 +14,16 @@ const buttonVariants = cva(
           "group rounded-full bg-[#f3fe00] text-[#0d0d0d] border border-[#f3fe00] text-sm leading-5 hover:bg-[#e0eb00] hover:border-[#e0eb00]",
         black:
           "group rounded-full bg-[#0d0d0d] text-white border border-[#0d0d0d] text-sm leading-5 hover:bg-[#1b1b1b] hover:border-[#1b1b1b]",
-        white:
+        whitetrans:
           "group rounded-full bg-transparent text-white border border-white text-sm leading-5 hover:border-[#f3fe00] hover:text-[#f3fe00]",
+        white:
+          "group rounded-full bg-white text-black border border-white text-sm leading-5 hover:border-[#fff] hover:text-[black]",
         submit:
           "group rounded-full bg-[#f3fe00] text-[#0d0d0d] border border-[#f3fe00] text-sm leading-5 w-full hover:bg-[#e0eb00] hover:border-[#e0eb00]",
+        yellowtrans:
+          "group rounded-full bg-[#f3fe00] text-[#0d0d0d] border border-transparent text-sm leading-5 hover:bg-transparent hover:text-[#f3fe00] hover:border-[#f3fe00]",
+        blacktrans:
+          "group rounded-full bg-white text-black border border-transparent text-base leading-6 font-medium hover:bg-transparent  hover:border-[#f3fe00]",
       },
       size: {
         sm: "h-8 px-4 py-2 text-sm",
