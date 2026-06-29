@@ -1,34 +1,19 @@
 import { Link } from "react-router-dom";
+import imgFooterBg from "../../../assets/images/imgbackgroundfooter.jpg";
+import imgLogoText from "../../../assets/images/imgLogoTextfooter.svg";
+import imgIso from "../../../assets/images/iso.png";
+import imgClutch from "../../../assets/images/imgClutchfooter.png";
+import imgGoodfirms from "../../../assets/images/imgGoodfirms.svg";
+import imgGoodfirms2 from "../../../assets/images/imgGoodfirms2.svg";
+import imgCustomSw from "../../../assets/images/imgCustomSw.png";
 
-const imgFooterBg =
-  "https://www.figma.com/api/mcp/asset/85600845-04e7-4e26-a8ed-68de8ad0bbde";
-const imgLogoText =
-  "https://www.figma.com/api/mcp/asset/6c9befc4-bdf2-440f-9ee5-f59428614a70";
-const imgIso =
-  "https://www.figma.com/api/mcp/asset/2b882b03-c564-4362-adfb-ee8b7c859168";
-const imgClutch =
-  "https://www.figma.com/api/mcp/asset/14dd38ba-06e0-47cf-b41d-ed836e194a56";
-const imgGoodfirms =
-  "https://www.figma.com/api/mcp/asset/67148ef0-a9ab-4e1f-96aa-1f6627f8efb2";
-const imgGoodfirms2 =
-  "https://www.figma.com/api/mcp/asset/e7672f4f-e1fa-4bb3-a3ce-603ac6bd3ae6";
-const imgCustomSw =
-  "https://www.figma.com/api/mcp/asset/385cdc56-f037-48bf-823f-37544286af1f";
+import imgDribbble from "../../../assets/images/dribblefooter.svg";
+import imgBehance from "../../../assets/images/imgbehancefooter.svg";
+import imgYoutube from "../../../assets/images/ytfooter.svg";
+import imgFacebook from "../../../assets/images/fbfooter.svg";
+import imgLinkedin from "../../../assets/images/linkedlnfooter.svg";
+import imgInstagram from "../../../assets/images/instagramfooter.svg";
 
-const imgDribbble =
-  "https://www.figma.com/api/mcp/asset/3033662e-52ed-4694-8bc6-1face5d8435f";
-const imgYoutube =
-  "https://www.figma.com/api/mcp/asset/a25f0c9b-ef66-4a3b-a66f-ebb234ebad40";
-const imgBehance =
-  "https://www.figma.com/api/mcp/asset/d4005c69-2a47-4524-b2d9-9a049a6c0b83";
-const imgLinkedin =
-  "https://www.figma.com/api/mcp/asset/cfa6f6c3-e6ee-4678-9c17-d8a4d0f12bd6";
-const imgFacebook =
-  "https://www.figma.com/api/mcp/asset/c3978bbc-3805-4fb3-a3ce-23ff171df27d";
-const imgInstagram =
-  "https://www.figma.com/api/mcp/asset/58bb0f64-631a-4640-b972-28ccbd92b7b1";
-
-// ── Nav data with proper routes ──────────────────────────────────────────────
 const COMPANY_LINKS = [
   { text: "Home", path: "/" },
   { text: "About", path: "/about" },
@@ -129,7 +114,6 @@ function NavCol({ title, links }) {
   );
 }
 
-// ── Social button — external links open in new tab ───────────────────────────
 function SocialBtn({ img, label, href }) {
   return (
     <a
@@ -246,7 +230,6 @@ export default function Footer() {
               © 2026 Copyright ZeeFrames Private Limited. All rights reserved.
             </p>
 
-            {/* Privacy Policy — internal link */}
             <Link
               to="/privacy-policy"
               className="group flex items-center gap-1.5 w-fit text-[#8f8f8f] text-[14px] leading-[21px] font-normal no-underline hover:text-white transition-colors duration-200"

@@ -1,0 +1,1182 @@
+{
+  "categories": [
+    {
+      "id": "ui-ux-design",
+      "label": "UI UX Design",
+      "icon": "bulb",
+      "services": [
+        {
+          "id": "ui-ux-consulting",
+          "slug": "ui-ux-consulting",
+          "href": "/services/ui-ux-consulting",
+          "dropdown_label": "UI UX Consulting",
+          "dropdown_description": "Shape your product vision with insights, market analysis, and growth strategies.",
+          "page": {
+            "hero": {
+              "title": "UI UX Consulting",
+              "subtitle": "We help businesses identify usability issues, improve user flows, and make confident UX decisions through expert analysis."
+            },
+            "impact": {
+              "badge": "Impact",
+              "heading": "Clarity Before Design Through Research-Driven Insights",
+              "description": "Our UI UX consulting focuses on understanding your product and users to uncover usability gaps, validate ideas, and define clear UX direction.",
+              "points": [
+                "Identifying usability and UX issues",
+                "Understanding user behavior and pain points",
+                "Improving user flows and navigation",
+                "Aligning UX decisions with business goals",
+                "Reducing design and development risks"
+              ]
+            },
+            "process": {
+              "badge": "our process",
+              "heading": "Our UI UX Consulting Process",
+              "steps": [
+                {
+                  "icon": "Consult1",
+                  "title": "Review",
+                  "description": "Understand goals, challenges, and current product experience"
+                },
+                {
+                  "icon": "Consult2",
+                  "title": "Analysis",
+                  "description": "Analyze user flows, interfaces, behaviors uncover friction"
+                },
+                {
+                  "icon": "Consult3",
+                  "title": "Strategy",
+                  "description": "Provide clear UX direction and actionable steps"
+                },
+                {
+                  "icon": "Consult4",
+                  "title": "Validation",
+                  "description": "Validate solutions and define practical implementation roadmap"
+                }
+              ]
+            },
+            "why_us": {
+              "heading": "Why Choose Our UI UX Consulting Expert?",
+              "points": [
+                {
+                  "title": "Research-Driven Decisions",
+                  "description": "Our recommendations are grounded in analysis and real user insights, ensuring informed decisions instead of assumptions."
+                },
+                {
+                  "title": "Actionable UX Guidance",
+                  "description": "We deliver clear, practical UX recommendations your team can quickly implement with confidence."
+                },
+                {
+                  "title": "Business-Focused Approach",
+                  "description": "Every UX decision is aligned with your product goals, user needs, and long-term business growth."
+                }
+              ]
+            }
+          },
+          "icon": "YOUR_ICON_URL_HERE"
+        },
+        {
+          "id": "ux-research-insights",
+          "slug": "ux-research-insights",
+          "href": "/services/ux-research-insights",
+          "dropdown_label": "UX Research & Insights",
+          "dropdown_description": "Uncover user needs and behaviors through research that drives design decisions.",
+          "page": {
+            "hero": {
+              "title": "UX Research & Insights",
+              "subtitle": "Understand your users beyond assumptions. We uncover what drives real behavior through research and data."
+            },
+            "impact": {
+              "badge": "Impact",
+              "heading": "Design Backed by Evidence",
+              "description": "Our UX Research & Insights reveal patterns, motivations, and expectations that shape better design decisions. We provide data you can act on, not guess from.",
+              "points": [
+                "User behavior & motivation",
+                "Problem discovery",
+                "Usability validation",
+                "Insight-based design direction"
+              ]
+            },
+            "process": {
+              "badge": "our process",
+              "heading": "A Strategic Process That Builds Strong Foundations",
+              "steps": [
+                {
+                  "icon": "Uxsearch",
+                  "title": "Plan",
+                  "description": "Define clear objectives and target audience."
+                },
+                {
+                  "icon": "Uxsearch2",
+                  "title": "Collect",
+                  "description": "Gather relevant qualitative and quantitative data."
+                },
+                {
+                  "icon": "Uxsearch3",
+                  "title": "Analyze",
+                  "description": "Find actionable insights and emerging trends."
+                },
+                {
+                  "icon": "Uxsearch4",
+                  "title": "Deliver",
+                  "description": "Present data-backed design recommendations."
+                }
+              ]
+            },
+            "why_us": {
+              "heading": "Why Are Our UX Research & Insights Services the Right Choice for You?",
+              "points": [
+                {
+                  "title": "We Base Every Decision on Proven Data",
+                  "description": "Design backed by real evidence ensures confidence and clarity in outcomes."
+                },
+                {
+                  "title": "We Uncover Meaningful User Insights",
+                  "description": "We conduct research to understand motivations, expectations, and experience challenges."
+                },
+                {
+                  "title": "We Identify User Problems and Opportunities",
+                  "description": "We analyze user behavior to reveal gaps and opportunities for product improvement."
+                }
+              ]
+            }
+          },
+          "icon": "YOUR_ICON_URL_HERE"
+        },
+        {
+          "id": "ux-audit-product-optimization",
+          "slug": "ux-audit-product-optimization",
+          "href": "/services/ux-audit-product-optimization",
+          "dropdown_label": "UX Audit & Product Optimization",
+          "dropdown_description": "Align goals and deliverables into a strategic roadmap for market success.",
+          "page": {
+            "hero": {
+              "title": "UX Audit & Product Optimization",
+              "subtitle": "Refine what exists, redefine how it performs. We optimize products for usability, efficiency, and conversion."
+            },
+            "impact": {
+              "badge": "Impact",
+              "heading": "Continuous Evolution for Lasting Growth",
+              "description": "Our UX Audit identifies design weaknesses, user friction, and missed opportunities, helping you deliver consistent product excellence.",
+              "points": [
+                "Heuristic analysis",
+                "Performance and usability review",
+                "Conversion optimization",
+                "Experience refinement"
+              ]
+            },
+            "process": {
+              "badge": "our process",
+              "heading": "A Strategic Process That Builds Strong Foundations",
+              "steps": [
+                {
+                  "icon": "productopt",
+                  "title": "Assess",
+                  "description": "Review current user experience and product performance."
+                },
+                {
+                  "icon": "productopt2",
+                  "title": "Analyze",
+                  "description": "Identify friction points and missed usability improvements strategically."
+                },
+                {
+                  "icon": "productopt3",
+                  "title": "Recommend",
+                  "description": "Deliver prioritized improvement plans and optimization suggestions clearly."
+                },
+                {
+                  "icon": "productopt4",
+                  "title": "Optimize",
+                  "description": "Implement and monitor changes to measure long-term user satisfaction."
+                }
+              ]
+            },
+            "why_us": {
+              "heading": "Why Are Our UX Audit Services the Right Choice for You?",
+              "points": [
+                {
+                  "title": "We Identify Usability and Experience Issues",
+                  "description": "We audit user flows, interactions, and interfaces to uncover friction points and gaps."
+                },
+                {
+                  "title": "We Prioritize Improvements Based on Impact",
+                  "description": "Findings are translated into clear, actionable recommendations tied to business outcomes."
+                },
+                {
+                  "title": "We Optimize Experiences for Better Adoption",
+                  "description": "Optimizations focus on usability, clarity, and conversion across the product."
+                }
+              ]
+            }
+          },
+          "icon": "YOUR_ICON_URL_HERE"
+        },
+        {
+          "id": "experience-architecture",
+          "slug": "experience-architecture",
+          "href": "/services/experience-architecture",
+          "dropdown_label": "Experience Architecture",
+          "dropdown_description": "Design intuitive structures and user flows that make products effortless.",
+          "page": {
+            "hero": {
+              "title": "Experience Architecture",
+              "subtitle": "Simplify complexity through structured design logic. We create intuitive user flows that make navigation effortless."
+            },
+            "impact": {
+              "badge": "Impact",
+              "heading": "Blueprinting Seamless Digital Experiences",
+              "description": "We create structures that make digital experiences intuitive and fluid, reducing friction and improving usability across all screens.",
+              "points": [
+                "Information hierarchy",
+                "Navigation clarity",
+                "Flow optimization",
+                "Wireframe logic"
+              ]
+            },
+            "process": {
+              "badge": "our process",
+              "heading": "A Strategic Process That Builds Strong Foundations",
+              "steps": [
+                {
+                  "icon": "experienceArti",
+                  "title": "Define",
+                  "description": "Gather requirements, objectives, and user expectations carefully."
+                },
+                {
+                  "icon": "experienceArti2",
+                  "title": "Map",
+                  "description": "Sketch visual paths and logical flows across different interactions."
+                },
+                {
+                  "icon": "experienceArti3",
+                  "title": "Structure",
+                  "description": "Organize navigation hierarchy, user goals, and screen layouts clearly."
+                },
+                {
+                  "icon": "experienceArti4",
+                  "title": "Validate",
+                  "description": "Test flow usability and adjust for better engagement efficiency."
+                }
+              ]
+            },
+            "why_us": {
+              "heading": "Why Are Our Experience Architecture Services the Right Choice for You?",
+              "points": [
+                {
+                  "title": "We Design Clear Experience Structures",
+                  "description": "We define how users move through products by structuring flows, journeys, and interaction patterns."
+                },
+                {
+                  "title": "We Bring Order to Complex Experiences",
+                  "description": "We organize features, content, and interactions into clear, logical experience systems."
+                },
+                {
+                  "title": "We Create Consistent Experience Frameworks",
+                  "description": "We design experience foundations that reduce confusion and improve usability across products."
+                }
+              ]
+            }
+          },
+          "icon": "YOUR_ICON_URL_HERE"
+        },
+        {
+          "id": "design-systems-guidelines",
+          "slug": "design-systems-guidelines",
+          "href": "/services/design-systems-guidelines",
+          "dropdown_label": "Design Systems & Guidelines",
+          "dropdown_description": "Develop scalable ecosystems that ensure brand consistency across platforms.",
+          "page": {
+            "hero": {
+              "title": "Design Systems & Guidelines",
+              "subtitle": "Design smarter, scale faster, and stay consistent. We create scalable systems that bring unity to your brand experiences."
+            },
+            "impact": {
+              "badge": "Impact",
+              "heading": "Building Foundations for Scalable Design",
+              "description": "Our Design Systems service establishes visual and functional harmony across your entire digital ecosystem. We standardize UI components, documentation, and interaction patterns to strengthen brand consistency.",
+              "points": [
+                "Design libraries & tokens",
+                "System scalability & team alignment",
+                "UI documentation & accessibility",
+                "Visual and brand consistency"
+              ]
+            },
+            "process": {
+              "badge": "our process",
+              "heading": "A Strategic Process That Builds Strong Foundations",
+              "steps": [
+                {
+                  "icon": "designsys",
+                  "title": "Audit",
+                  "description": "Evaluate existing design assets, patterns, and inconsistencies."
+                },
+                {
+                  "icon": "designsys2",
+                  "title": "Create",
+                  "description": "Develop reusable UI components, styles, and tokens for flexible scaling."
+                },
+                {
+                  "icon": "designsys3",
+                  "title": "Document",
+                  "description": "Establish design rules and documentation to enhance collab."
+                },
+                {
+                  "icon": "designsys4",
+                  "title": "Integrate",
+                  "description": "Implement, train teams, and ensure smooth workflow adoption."
+                }
+              ]
+            },
+            "why_us": {
+              "heading": "Why Are Our Design System Services the Right Choice for You?",
+              "points": [
+                {
+                  "title": "We Create Unified Design Languages",
+                  "description": "We define shared UI components, patterns, and principles that keep products consistent across teams and platforms."
+                },
+                {
+                  "title": "We Improve Speed and Design Efficiency",
+                  "description": "Our systems reduce rework and accelerate design and development workflows."
+                },
+                {
+                  "title": "We Ensure Long-Term Consistency at Scale",
+                  "description": "Design guidelines evolve with your product without losing clarity or control."
+                }
+              ]
+            }
+          },
+          "icon": "YOUR_ICON_URL_HERE"
+        },
+        {
+          "id": "prototyping-user-testing",
+          "slug": "prototyping-user-testing",
+          "href": "/services/prototyping-user-testing",
+          "dropdown_label": "Prototyping & User Testing",
+          "dropdown_description": "Turn ideas into prototypes, validate with users, and refine before launch.",
+          "page": {
+            "hero": {
+              "title": "Prototyping & User Testing",
+              "subtitle": "Test ideas, validate fast, and design smarter. We turn concepts into interactive experiences validated by real users."
+            },
+            "impact": {
+              "badge": "Impact",
+              "heading": "From Idea to User-Validated Prototype",
+              "description": "We help you move from assumptions to proof by turning design ideas into clickable, testable prototypes. Our testing ensures every interaction is purposeful and performance-driven.",
+              "points": [
+                "Prototyping for concept validation",
+                "Real user testing",
+                "Feedback collection & iteration",
+                "Usability improvement insights"
+              ]
+            },
+            "process": {
+              "badge": "our process",
+              "heading": "A Strategic Process That Builds Strong Foundations",
+              "steps": [
+                {
+                  "icon": "protoUser",
+                  "title": "Concept",
+                  "description": "Define prototype goals, interaction depth, and test objectives clearly."
+                },
+                {
+                  "icon": "protoUser2",
+                  "title": "Build",
+                  "description": "Design high-fidelity prototypes for realistic testing scenarios."
+                },
+                {
+                  "icon": "protoUser3",
+                  "title": "Test",
+                  "description": "Iterate and enhance the design based on verified test outcomes."
+                },
+                {
+                  "icon": "protoUser4",
+                  "title": "Refine",
+                  "description": "Iterate and enhance the design based on verified test outcomes effectively."
+                }
+              ]
+            },
+            "why_us": {
+              "heading": "Why Are Our Prototyping & User Testing Services the Right Choice for You?",
+              "points": [
+                {
+                  "title": "We Validate Ideas With Real Users",
+                  "description": "We test assumptions early using interactive prototypes and real user feedback."
+                },
+                {
+                  "title": "We Identify Usability Issues Before Development",
+                  "description": "Testing uncovers friction points that could impact adoption and usability."
+                },
+                {
+                  "title": "We Support Confident Product Decisions",
+                  "description": "Insights from testing help teams move forward with clarity and confidence."
+                }
+              ]
+            }
+          },
+          "icon": "YOUR_ICON_URL_HERE"
+        },
+        {
+          "id": "web-design",
+          "slug": "web-design",
+          "href": "/services/web-design",
+          "dropdown_label": "Web Design",
+          "dropdown_description": "Deliver striking, functional interfaces that enhance user satisfaction.",
+          "page": {
+            "hero": {
+              "title": "Web Design",
+              "subtitle": "We design modern, responsive websites that balance visual appeal with usability, performance, and business goals."
+            },
+            "impact": {
+              "badge": "Impact",
+              "heading": "Web Design Focused on Usability and Impact",
+              "description": "We design websites that prioritize usability, clarity, and performance while supporting meaningful user actions and business outcomes.",
+              "points": [
+                "Clear and intuitive website structure",
+                "Responsive design across all devices",
+                "Improved usability and navigation",
+                "Websites aligned with business objectives"
+              ]
+            },
+            "process": {
+              "badge": "our process",
+              "heading": "Our Web Design Process Focused on Results",
+              "steps": [
+                {
+                  "icon": "webDesign",
+                  "title": "Discovery",
+                  "description": "Understand goals, audience, and website requirements"
+                },
+                {
+                  "icon": "webDesign2",
+                  "title": "Structure",
+                  "description": "Define sitemap, layout, and content hierarchy"
+                },
+                {
+                  "icon": "webDesign3",
+                  "title": "Design",
+                  "description": "Create responsive, visually consistent website layouts"
+                },
+                {
+                  "icon": "webDesign4",
+                  "title": "Refinement",
+                  "description": "Refine designs based on feedback and validation"
+                }
+              ]
+            },
+            "why_us": {
+              "heading": "Why Choose Our Web Design Services?",
+              "points": [
+                {
+                  "title": "User-Centered Design",
+                  "description": "We design websites around user needs, ensuring clarity, accessibility, and intuitive navigation."
+                },
+                {
+                  "title": "Responsive by Default",
+                  "description": "Our designs adapt seamlessly across devices to deliver a consistent experience everywhere."
+                },
+                {
+                  "title": "Business-Aligned Design",
+                  "description": "Every design choice supports your brand, goals, and conversion objectives."
+                }
+              ]
+            }
+          },
+          "icon": "YOUR_ICON_URL_HERE"
+        },
+        {
+          "id": "mobile-design",
+          "slug": "mobile-design",
+          "href": "/services/mobile-design",
+          "dropdown_label": "Mobile Design",
+          "dropdown_description": "Enrich experiences with animations that bring interfaces to life.",
+          "page": {
+            "hero": {
+              "title": "Mobile Design",
+              "subtitle": "We design mobile-first interfaces that are intuitive, responsive, and optimized for real user behavior across devices."
+            },
+            "impact": {
+              "badge": "Impact",
+              "heading": "Mobile Experiences Built with Purpose",
+              "description": "Our mobile design services create clear, fast, and easy-to-navigate experiences optimized for smaller screens and real user behavior.",
+              "points": [
+                "Mobile-first layout and structure",
+                "Touch-friendly interactions",
+                "Clear navigation on small screens",
+                "Consistent design across devices"
+              ]
+            },
+            "process": {
+              "badge": "our process",
+              "heading": "Our Mobile Design Process",
+              "steps": [
+                {
+                  "icon": "mobileDesign",
+                  "title": "Research",
+                  "description": "Understand mobile users, behaviors, and contexts"
+                },
+                {
+                  "icon": "mobileDesign2",
+                  "title": "Structure",
+                  "description": "Define mobile layouts and content hierarchy"
+                },
+                {
+                  "icon": "mobileDesign3",
+                  "title": "Design",
+                  "description": "Create intuitive, touch-friendly mobile interfaces"
+                },
+                {
+                  "icon": "mobileDesign4",
+                  "title": "Testing",
+                  "description": "Validate usability across devices and screen sizes"
+                }
+              ]
+            },
+            "why_us": {
+              "heading": "Why Choose Our Mobile Design Services?",
+              "points": [
+                {
+                  "title": "Mobile-First Thinking",
+                  "description": "We design with mobile users in mind from the start, not as an afterthought."
+                },
+                {
+                  "title": "Touch-Friendly Design",
+                  "description": "Our interfaces are optimized for gestures, thumb reach, and ease of interaction."
+                },
+                {
+                  "title": "Consistent Across Devices",
+                  "description": "We ensure a seamless experience across mobile, tablet, and desktop screens."
+                }
+              ]
+            }
+          },
+          "icon": "YOUR_ICON_URL_HERE"
+        }
+      ]
+    },
+    {
+      "id": "brand-design",
+      "label": "Brand Design",
+      "icon": "pen",
+      "services": [
+        {
+          "id": "brand-identity-design",
+          "slug": "brand-identity-design",
+          "href": "/services/brand-identity-design",
+          "dropdown_label": "Brand Identity Design",
+          "dropdown_description": "Create clear brand identities that reflect values, resonate with audiences, and support long-term growth.",
+          "page": {
+            "hero": {
+              "title": "Brand Identity Design",
+              "subtitle": "We design brand identities that inspire recognition and trust. Your brand's visual DNA, shaped for consistency, clarity, and timeless appeal."
+            },
+            "impact": {
+              "badge": "Impact",
+              "heading": "Identity That Defines Your Brand",
+              "description": "Our Brand Identity Design service builds the visual and emotional foundation of your brand. We craft logos, typography, and color systems that capture who you are and how you want to be remembered.",
+              "points": [
+                "Logo and mark design",
+                "Color palette and typography",
+                "Visual consistency across platforms",
+                "Brand personality and mood creation"
+              ]
+            },
+            "process": {
+              "badge": "our process",
+              "heading": "Our Brand Identity Design Process",
+              "steps": [
+                {
+                  "icon": "Consult1",
+                  "title": "Discover",
+                  "description": "Understand brand values, audience insights, and goals deeply for authenticity."
+                },
+                {
+                  "icon": "experienceArti",
+                  "title": "Direction",
+                  "description": "Establish creative tone, mood, and positioning direction clearly across channels."
+                },
+                {
+                  "icon": "mobileDesign2",
+                  "title": "Design",
+                  "description": "Craft cohesive logo systems and visuals that express brand essence beautifully."
+                },
+                {
+                  "icon": "webDesign4",
+                  "title": "Guidelines",
+                  "description": "Document every asset in a clear, easy-to-use and comprehensive brand guide for consistency."
+                }
+              ]
+            },
+            "why_us": {
+              "heading": "Why Choose Our Brand Identity Design Services?",
+              "points": [
+                {
+                  "title": "Strategic Foundation",
+                  "description": "We design brand identities grounded in clear strategy, ensuring every visual decision supports your brand's purpose, positioning, and long-term goals."
+                },
+                {
+                  "title": "Consistent Systems",
+                  "description": "Our brand identities are built as complete systems, ensuring consistency across digital, print, and physical touchpoints as your brand grows."
+                },
+                {
+                  "title": "Scalable Design",
+                  "description": "We create flexible brand identities that adapt easily over time, supporting new products, platforms, and future business expansion."
+                }
+              ]
+            }
+          },
+          "icon": "YOUR_ICON_URL_HERE"
+        },
+        {
+          "id": "brand-strategy-positioning",
+          "slug": "brand-strategy-positioning",
+          "href": "/services/brand-strategy-positioning",
+          "dropdown_label": "Brand Strategy & Positioning",
+          "dropdown_description": "Define brand direction through research-driven strategy, positioning, and insights that guide design decisions.",
+          "page": {
+            "hero": {
+              "title": "Brand Strategy & Positioning",
+              "subtitle": "Define who you are, why you matter, and where you belong. We position your brand with clarity, confidence, and competitive power."
+            },
+            "impact": {
+              "badge": "Impact",
+              "heading": "Building Brands With Strategic Depth",
+              "description": "We create brand strategies that articulate vision, values, and personality. Our positioning frameworks help your brand stand out and connect emotionally with the right audience.",
+              "points": [
+                "Market research & analysis",
+                "Brand positioning & tone",
+                "Audience persona development",
+                "Value proposition definition"
+              ]
+            },
+            "process": {
+              "badge": "our process",
+              "heading": "A Strategic Process That Builds Strong Foundations",
+              "steps": [
+                {
+                  "icon": "telescopeicon",
+                  "title": "Research",
+                  "description": "Explore market landscape, competitors, and audience expectations thoroughly."
+                },
+                {
+                  "icon": "experienceArti",
+                  "title": "Define",
+                  "description": "Identify positioning, tone, and communication pillars that set you apart distinctly."
+                },
+                {
+                  "icon": "codeicon",
+                  "title": "Develop",
+                  "description": "Craft messaging, mission, and purpose that resonate across every brand channel."
+                },
+                {
+                  "icon": "Consult4",
+                  "title": "Align",
+                  "description": "Validate positioning through audience feedback and refine for maximum impact."
+                }
+              ]
+            },
+            "why_us": {
+              "heading": "Why Are Our Brand Strategy & Positioning Services the Right Choice for You?",
+              "points": [
+                {
+                  "title": "We Define Clear Brand Strategy",
+                  "description": "We clarify your brand's purpose, vision, and goals to create a strong strategic foundation."
+                },
+                {
+                  "title": "We Establish Strategic Brand Direction",
+                  "description": "We help define where your brand is going and how it should communicate."
+                },
+                {
+                  "title": "We Align Brand Vision and Purpose",
+                  "description": "We ensure your brand strategy reflects your mission and long-term objectives."
+                }
+              ]
+            }
+          },
+          "icon": "YOUR_ICON_URL_HERE"
+        },
+        {
+          "id": "motion-design",
+          "slug": "motion-design",
+          "href": "/services/motion-design",
+          "dropdown_label": "Motion Design",
+          "dropdown_description": "Evolve brands with scalable systems that ensure clarity, consistency, and relevance.",
+          "page": {
+            "hero": {
+              "title": "Motion Design",
+              "subtitle": "We create purposeful motion design that enhances storytelling, improves user experience, and adds clarity and impact to digital products."
+            },
+            "impact": {
+              "badge": "Impact",
+              "heading": "Motion That Communicates",
+              "description": "Our motion design services use purposeful movement to guide attention, explain ideas, and enhance usability without distraction.",
+              "points": [
+                "Smooth, intuitive interactions",
+                "Clear visual storytelling through motion",
+                "Stronger brand expression",
+                "Enhanced product and interface clarity"
+              ]
+            },
+            "process": {
+              "badge": "our process",
+              "heading": "Our Motion Design Process",
+              "steps": [
+                {
+                  "icon": "Consult1",
+                  "title": "Concept",
+                  "description": "Define purpose, message, and motion direction"
+                },
+                {
+                  "icon": "experienceArti",
+                  "title": "Storyboard",
+                  "description": "Plan motion flow, timing, and transitions"
+                },
+                {
+                  "icon": "creativedesgiIcon3",
+                  "title": "Design",
+                  "description": "Create animations aligned with brand and product"
+                },
+                {
+                  "icon": "protoUser3",
+                  "title": "Refinement",
+                  "description": "Polish motion for clarity, smoothness, and impact"
+                }
+              ]
+            },
+            "why_us": {
+              "heading": "Why Choose Our Motion Design Services?",
+              "points": [
+                {
+                  "title": "Purpose-Driven Motion",
+                  "description": "Every animation serves a clear purpose\u2014enhancing usability, communication, or brand expression."
+                },
+                {
+                  "title": "Brand-Aligned Animations",
+                  "description": "Our motion designs reflect your brand's personality and visual language consistently."
+                },
+                {
+                  "title": "Product-Focused Approach",
+                  "description": "We design motion that supports interactions and user experience, not distracts from it."
+                }
+              ]
+            }
+          },
+          "icon": "YOUR_ICON_URL_HERE"
+        },
+        {
+          "id": "visual-communication-design",
+          "slug": "visual-communication-design",
+          "href": "/services/visual-communication-design",
+          "dropdown_label": "Visual Communication Design",
+          "dropdown_description": "Deliver cohesive assets from social to campaigns, reinforcing consistency.",
+          "page": {
+            "hero": {
+              "title": "Visual Communication Design",
+              "subtitle": "Deliver cohesive visual assets that amplify brand consistency. We design communication materials that speak your brand's language clearly and effectively."
+            },
+            "impact": {
+              "badge": "Impact",
+              "heading": "Building Cohesive Visual Brand Communication",
+              "description": "Our Visual Communication Design service ensures that every marketing material, social post, and campaign asset aligns with your brand identity. We help you communicate visually with clarity, consistency, and creativity.",
+              "points": [
+                "Social media and digital assets",
+                "Marketing and advertising collateral",
+                "Campaign visuals and storytelling",
+                "Brand consistency across all channels"
+              ]
+            },
+            "process": {
+              "badge": "our process",
+              "heading": "A Strategic Process That Builds Strong Foundations",
+              "steps": [
+                {
+                  "icon": "Consult1",
+                  "title": "Discover",
+                  "description": "Understand your brand goals, campaigns, and communication needs thoroughly."
+                },
+                {
+                  "icon": "Consult2",
+                  "title": "Conceptualize",
+                  "description": "Develop design ideas and visual directions that align with campaign strategy seamlessly."
+                },
+                {
+                  "icon": "mobileDesign2",
+                  "title": "Design",
+                  "description": "Create high-quality visuals optimized for digital and print performance efficiently."
+                },
+                {
+                  "icon": "webDesign4",
+                  "title": "Deliver",
+                  "description": "Package assets with detailed brand application guidelines for consistent usage globally."
+                }
+              ]
+            },
+            "why_us": {
+              "heading": "Why Are Our Visual Communication Design Services the Right Choice for You?",
+              "points": [
+                {
+                  "title": "We Translate Complex Ideas Into Clear Visuals",
+                  "description": "We simplify information through visuals that are easy to understand and act on."
+                },
+                {
+                  "title": "We Design Consistent Visual Messaging",
+                  "description": "Visual elements stay aligned across product, brand, and marketing touchpoints."
+                },
+                {
+                  "title": "We Improve Engagement Through Design Clarity",
+                  "description": "Clear visuals help users process information faster and with confidence."
+                }
+              ]
+            }
+          },
+          "icon": "YOUR_ICON_URL_HERE"
+        },
+        {
+          "id": "rebranding-evolution",
+          "slug": "rebranding-evolution",
+          "href": "/services/rebranding-evolution",
+          "dropdown_label": "Rebranding & Evolution",
+          "dropdown_description": "Evolve brands with scalable systems that ensure clarity, consistency, and relevance.",
+          "page": {
+            "hero": {
+              "title": "Rebranding & Evolution",
+              "subtitle": "Transform existing identities into modern, future-ready brand systems. We evolve your brand with purpose, precision, and continuity."
+            },
+            "impact": {
+              "badge": "Impact",
+              "heading": "Revitalizing Brands for the Next Chapter",
+              "description": "Our Rebranding & Evolution service helps you modernize your visual identity, tone, and positioning without losing your core essence. We ensure your brand remains relevant, engaging, and forward-looking.",
+              "points": [
+                "Brand audits and evaluations",
+                "Identity redesign and refinement",
+                "Brand repositioning and tone update",
+                "Transition strategy and rollout planning"
+              ]
+            },
+            "process": {
+              "badge": "our process",
+              "heading": "A Strategic Process That Builds Strong Foundations",
+              "steps": [
+                {
+                  "icon": "Consult1",
+                  "title": "Assess",
+                  "description": "Review your existing brand identity, voice, and perception comprehensively."
+                },
+                {
+                  "icon": "Consult2",
+                  "title": "Strategize",
+                  "description": "Define rebranding goals and develop creative strategies aligned with future direction thoughtfully."
+                },
+                {
+                  "icon": "designsys4",
+                  "title": "Redesign",
+                  "description": "Create refreshed visuals and systems that reflect modern relevance beautifully."
+                },
+                {
+                  "icon": "webDesign4",
+                  "title": "Launch",
+                  "description": "Implement new identity and ensure a seamless transition across all platforms smoothly."
+                }
+              ]
+            },
+            "why_us": {
+              "heading": "Why Are Our Rebranding & Evolution Services the Right Choice for You?",
+              "points": [
+                {
+                  "title": "We Identify Gaps in Brand Perception",
+                  "description": "We uncover misalignment between brand intent and audience perception."
+                },
+                {
+                  "title": "We Redesign Brand Systems for Today's Market",
+                  "description": "Updated visuals and messaging reflect current positioning and future direction."
+                },
+                {
+                  "title": "We Maintain Consistency During Brand Change",
+                  "description": "Systems ensure brand integrity across all touchpoints."
+                }
+              ]
+            }
+          },
+          "icon": "YOUR_ICON_URL_HERE"
+        }
+      ]
+    },
+    {
+      "id": "no-code-development",
+      "label": "No-Code Development",
+      "icon": "dev",
+      "services": [
+        {
+          "id": "webflow-development",
+          "slug": "webflow-development",
+          "href": "/services/webflow-development",
+          "dropdown_label": "Webflow Development",
+          "dropdown_description": "Build responsive, scalable Webflow websites focused on performance, usability, and long-term flexibility.",
+          "page": {
+            "hero": {
+              "title": "Webflow Development",
+              "subtitle": "Build pixel-perfect, responsive websites powered by Webflow \u2014 combining design precision with seamless, no-code performance."
+            },
+            "impact": {
+              "badge": "Impact",
+              "heading": "Scalable Design Meets Reliable Webflow Execution",
+              "description": "Our Webflow Development service transforms creative designs into responsive, high-performance websites. We focus on precision, maintainability, and conversion-driven performance \u2014 giving your brand a scalable and visually consistent digital foundation.",
+              "points": [
+                "SEO and site speed optimization",
+                "CMS and dynamic content structure",
+                "Design-to-Webflow implementation",
+                "Custom responsive Webflow websites"
+              ]
+            },
+            "process": {
+              "badge": "our process",
+              "heading": "A Strategic Process That Builds Strong Foundations",
+              "steps": [
+                {
+                  "icon": "Consult1",
+                  "title": "Plan",
+                  "description": "Analyze project goals, content flow, and design structure for flawless conversion."
+                },
+                {
+                  "icon": "nocodeIcon1",
+                  "title": "Build",
+                  "description": "Develop pixel-perfect, CMS-powered layouts ensuring adaptability across devices globally."
+                },
+                {
+                  "icon": "Consult4",
+                  "title": "Optimize",
+                  "description": "Test SEO, accessibility, and performance metrics for maximum impact and speed."
+                },
+                {
+                  "icon": "Consult4",
+                  "title": "Launch",
+                  "description": "Deliver a polished, live-ready site with smooth interactions and scalability ensured."
+                }
+              ]
+            },
+            "why_us": {
+              "heading": "Why Are Our Webflow Development Services the Right Choice for You?",
+              "points": [
+                {
+                  "title": "We Build Fast and Reliable Webflow Websites",
+                  "description": "We develop performance-optimized Webflow sites that load fast and deliver smooth user experiences."
+                },
+                {
+                  "title": "We Focus on Speed and Efficiency",
+                  "description": "Our Webflow builds prioritize clean structure and fast performance across devices."
+                },
+                {
+                  "title": "We Optimize Webflow for Performance",
+                  "description": "We ensure your Webflow site is lightweight, responsive, and built to perform."
+                }
+              ]
+            }
+          },
+          "icon": "YOUR_ICON_URL_HERE"
+        },
+        {
+          "id": "framer-development",
+          "slug": "framer-development",
+          "href": "/services/framer-development",
+          "dropdown_label": "Framer Development",
+          "dropdown_description": "Build interactive Framer websites with smooth animations and modern experiences.",
+          "page": {
+            "hero": {
+              "title": "Framer Development",
+              "subtitle": "Craft interactive, high-performing websites using Framer \u2014 blending motion, speed, and real-time collaboration for modern web experiences."
+            },
+            "impact": {
+              "badge": "Impact",
+              "heading": "Designing Websites That Move and Engage",
+              "description": "Our Framer Development service helps brands create immersive, motion-rich websites that feel alive. We bring designs to life with fast performance, fluid animations, and frictionless collaboration.",
+              "points": [
+                "SEO and analytics setup",
+                "Framer website design & development",
+                "Integration and hosting optimization",
+                "Custom motion and interaction design"
+              ]
+            },
+            "process": {
+              "badge": "our process",
+              "heading": "A Strategic Process That Builds Strong Foundations",
+              "steps": [
+                {
+                  "icon": "Consult1",
+                  "title": "Plan",
+                  "description": "Define brand goals, motion intent, and functional priorities for creative alignment."
+                },
+                {
+                  "icon": "mobileDesign2",
+                  "title": "Design",
+                  "description": "Implement smooth animations, transitions, and page structures that reinforce storytelling."
+                },
+                {
+                  "icon": "codeicon",
+                  "title": "Develop",
+                  "description": "Build responsive Framer sites optimized for speed, engagement, and accessibility throughout."
+                },
+                {
+                  "icon": "Consult4",
+                  "title": "Deliver",
+                  "description": "Test, refine, and launch high-performing websites with integrated analytics tracking."
+                }
+              ]
+            },
+            "why_us": {
+              "heading": "Why Are Our Framer Development Services the Right Choice for You?",
+              "points": [
+                {
+                  "title": "We Translate Design Into Interactive Experiences",
+                  "description": "Designs are implemented with accuracy, motion, and interaction in Framer."
+                },
+                {
+                  "title": "We Build Conversion-Focused Pages",
+                  "description": "Layouts, interactions, and structure support clarity and action."
+                },
+                {
+                  "title": "We Enable Rapid Changes and Experiments",
+                  "description": "Teams can iterate quickly without relying on long development cycles."
+                }
+              ]
+            }
+          },
+          "icon": "YOUR_ICON_URL_HERE"
+        },
+        {
+          "id": "figma-sites",
+          "slug": "figma-sites",
+          "href": "/services/figma-sites",
+          "dropdown_label": "Figma Sites",
+          "dropdown_description": "Design and launch Figma-based websites with clean structure, consistency, and rapid iteration.",
+          "page": {
+            "hero": {
+              "title": "Figma Sites",
+              "subtitle": "Transform your Figma designs into live, responsive websites with structured development, pixel accuracy, and full design integrity."
+            },
+            "impact": {
+              "badge": "Impact",
+              "heading": "From Design to Fully Functional Reality",
+              "description": "We bring your Figma designs to life using modern no-code tools. Our approach ensures pixel perfection, responsive design, and consistent brand execution across devices.",
+              "points": [
+                "Responsive design implementation",
+                "Figma-to-Webflow/Framer conversion",
+                "Visual and interaction consistency",
+                "Speed and accessibility optimization"
+              ]
+            },
+            "process": {
+              "badge": "our process",
+              "heading": "A Strategic Process That Builds Strong Foundations",
+              "steps": [
+                {
+                  "icon": "Consult1",
+                  "title": "Analyze",
+                  "description": "Review your Figma design and identify development-ready sections clearly."
+                },
+                {
+                  "icon": "nocodeIcon1",
+                  "title": "Build",
+                  "description": "Convert designs into live websites using Webflow or Framer."
+                },
+                {
+                  "icon": "designsys4",
+                  "title": "Optimize",
+                  "description": "Boost responsiveness, performance, and interactivity for enhanced UX."
+                },
+                {
+                  "icon": "webDesign4",
+                  "title": "Deliver",
+                  "description": "Finalize, test, and hand over editable systems for management."
+                }
+              ]
+            },
+            "why_us": {
+              "heading": "Why Are Our Figma Sites Services the Right Choice for You?",
+              "points": [
+                {
+                  "title": "We Convert Figma Designs Into Live Sites",
+                  "description": "We transform approved Figma designs into fully functional websites using Figma Sites."
+                },
+                {
+                  "title": "We Maintain Design Accuracy and Consistency",
+                  "description": "Visual fidelity is preserved from design to live website without compromise."
+                },
+                {
+                  "title": "We Enable Faster Launch Without Engineering",
+                  "description": "No-code workflows reduce dependency on traditional development teams."
+                }
+              ]
+            }
+          },
+          "icon": "YOUR_ICON_URL_HERE"
+        },
+        {
+          "id": "platform-maintenance-support",
+          "slug": "platform-maintenance-support",
+          "href": "/services/platform-maintenance-support",
+          "dropdown_label": "Platform Maintenance & Support",
+          "dropdown_description": "Maintain, optimize, and support platforms to ensure stability, performance, updates, and reliability.",
+          "page": {
+            "hero": {
+              "title": "Platform Maintenance & Support",
+              "subtitle": "Ensure long-term stability with continuous updates, backups, and performance optimization for all your no-code platforms and websites."
+            },
+            "impact": {
+              "badge": "Impact",
+              "heading": "Sustaining Growth Through Reliable Support",
+              "description": "Our Platform Maintenance & Support service keeps your no-code solutions secure, fast, and updated. We manage updates, monitor uptime, and ensure your systems stay optimized for user performance.",
+              "points": [
+                "Regular maintenance and backups",
+                "Bug fixes and performance monitoring",
+                "Security Optimization & Uptime Support",
+                "Feature updates and scalability checks"
+              ]
+            },
+            "process": {
+              "badge": "our process",
+              "heading": "A Strategic Process That Builds Strong Foundations",
+              "steps": [
+                {
+                  "icon": "Consult1",
+                  "title": "Monitor",
+                  "description": "Track performance metrics, uptime, and system health 24/7 for reliability."
+                },
+                {
+                  "icon": "maintanceicon",
+                  "title": "Maintain",
+                  "description": "Execute regular updates, patch fixes, and version control consistency."
+                },
+                {
+                  "icon": "Consult4",
+                  "title": "Optimize",
+                  "description": "Improve loading times, performance, and user experience through insights."
+                },
+                {
+                  "icon": "questionmarkicon",
+                  "title": "Support",
+                  "description": "Provide ongoing support and performance reports for clarity."
+                }
+              ]
+            },
+            "why_us": {
+              "heading": "Why Are Our Maintenance & Support Services the Right Choice for You?",
+              "points": [
+                {
+                  "title": "We Ensure Platform Stability and Reliability",
+                  "description": "We monitor and maintain platforms to prevent issues and downtime."
+                },
+                {
+                  "title": "We Handle Updates and Continuous Improvements",
+                  "description": "Regular updates keep platforms secure, optimized, and aligned with evolving needs."
+                },
+                {
+                  "title": "We Support Growth Without Disruption",
+                  "description": "Maintenance processes are designed to support scale smoothly."
+                }
+              ]
+            }
+          },
+          "icon": "YOUR_ICON_URL_HERE"
+        }
+      ]
+    }
+  ]
+}
