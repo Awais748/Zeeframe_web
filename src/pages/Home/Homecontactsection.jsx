@@ -133,7 +133,7 @@ const Homecontactsection = () => {
                 </p>
                 <div className="flex flex-col sm:flex-row sm:items-center items-start gap-4">
                   <Link
-                    href="https://wa.me/+14232493851"
+                    to="https://wa.me/14232493851"
                     target="blank"
                     aria-label="contact us on whatsapp via +14232493851"
                     className="text-sm leading-5 text-[#BDBDBD] flex items-center gap-1.5"
@@ -142,7 +142,7 @@ const Homecontactsection = () => {
                     +14232493851
                   </Link>
                   <Link
-                    href="mailto:businessmanager@zeeframes.com"
+                    to="mailto:businessmanager@zeeframes.com"
                     target="blank"
                     aria-label="Mail us on businessmanager@zeeframes.com"
                     className="text-sm leading-5 text-[#BDBDBD] flex items-center gap-1.5"

@@ -4,6 +4,7 @@
 @import "tailwindcss";
 
 body {
+  background: #090909;
   font-family: "Inter Tight";
   font-family: "Inter", sans-serif;
   font-family: "Geologica";
@@ -70,4 +71,25 @@ body {
 /* Pause on hover (optional) */
 .logo-slider:hover .logo-track {
   animation-play-state: paused;
+}
+
+.main-heading {
+  color: #f3fe00;
+  text-align: start;
+  font-size: 14px;
+  font-style: normal;
+  font-weight: 500;
+  line-height: normal;
+  text-transform: uppercase;
+}
+
+.description {
+  color: var(--white, #fff);
+  font-family: Geologica;
+  font-size: 32px;
+  font-style: normal;
+  font-weight: 300;
+  line-height: 46px;
+  max-width: 981px;
+  width: 100%;
 }

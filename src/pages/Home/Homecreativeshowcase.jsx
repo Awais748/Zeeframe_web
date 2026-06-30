@@ -1,3 +1,4 @@
+import { useMemo } from "react";
 import HomeSectionHeader from "../../Components/ui/HomeHeader";
 import imgArrow from "../../assets/images/imgarrow.svg";
 import imgEllipse from "../../assets/images/imgEllipse.svg";
@@ -14,42 +15,72 @@ const projects = [
     image: img1,
     name: "Bloom Money",
     description: "Empowering communities with financial solutions.",
+    categories: ["Fin-Tech", "SaaS"],
   },
   {
     id: 2,
     image: img2,
     name: "Alfan",
     description: "The Platform for Content Creators",
+    categories: ["Social Media", "Mar-Tech", "AI"],
   },
   {
     id: 3,
     image: img3,
     name: "Earpoin",
     description: "The Best Place ToFind Productivity Tools",
+    categories: ["SaaS", "IT/Consulting", "AI"],
   },
   {
     id: 4,
     image: img4,
     name: "Finnecta",
     description: "Wallet application to streamline digital transactions",
+    categories: ["Fin-Tech", "Crypto & Web3"],
   },
   {
     id: 5,
     image: img5,
     name: "Trivo",
     description: "Clearbit, a business intelligence platform",
+    categories: ["Enterprise", "IT/Consulting", "AI"],
   },
   {
     id: 6,
     image: img6,
     name: "Fastgo",
     description: "Fastgo's scooter rental app to drive adoption",
+    categories: ["Automotive", "Freight & Logistics"],
   },
 ];
 
-export default function Homecreativeshowcase() {
-  const leftProjects = projects.filter((_, i) => i % 2 === 0);
-  const rightProjects = projects.filter((_, i) => i % 2 === 1);
+const shuffleArray = (array) => {
+  const result = [...array];
+  for (let i = result.length - 1; i > 0; i--) {
+    const j = Math.floor(Math.random() * (i + 1));
+    [result[i], result[j]] = [result[j], result[i]];
+  }
+  return result;
+};
+
+export default function Homecreativeshowcase({
+  showHeader = true,
+  activeCategory = "All Niches",
+}) {
+  const filteredProjects = useMemo(() => {
+    const matched =
+      activeCategory === "All Niches"
+        ? projects
+        : projects.filter((p) => p.categories.includes(activeCategory));
+
+    // Agar koi match na ho to bhi khali na rahe, saare projects shuffled dikha do
+    const finalList = matched.length > 0 ? matched : projects;
+
+    return shuffleArray(finalList);
+  }, [activeCategory]);
+
+  const leftProjects = filteredProjects.filter((_, i) => i % 2 === 0);
+  const rightProjects = filteredProjects.filter((_, i) => i % 2 === 1);
 
   return (
     <section
@@ -59,11 +90,13 @@ export default function Homecreativeshowcase() {
       }}
     >
       <div className="container flex flex-col gap-16 py-20">
-        <HomeSectionHeader
-          eyebrow="how we helped others succeed"
-          title="Our Creative Showcase"
-          description="We have become experts in creating top-notch digital products. We design beautifully and develop excellently. And we care deeply about what we do."
-        />
+        {showHeader && (
+          <HomeSectionHeader
+            eyebrow="how we helped others succeed"
+            title="Our Creative Showcase"
+            description="We have become experts in creating top-notch digital products. We design beautifully and develop excellently. And we care deeply about what we do."
+          />
+        )}
 
         {/* Desktop: 2-col staggered grid */}
         <div className="hidden sm:grid grid-cols-2 gap-x-10 w-full">
@@ -146,7 +179,7 @@ export default function Homecreativeshowcase() {
 
         {/* Mobile: single column */}
         <div className="flex sm:hidden flex-col gap-10 w-full pt-5">
-          {projects.map((project) => (
+          {filteredProjects.map((project) => (
             <div key={project.id} className="flex flex-col gap-6 w-full">
               <div className="relative w-full rounded-3xl overflow-hidden h-[414px] shrink-0">
                 <img

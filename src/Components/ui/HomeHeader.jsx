@@ -2,6 +2,7 @@ const HomeSectionHeader = ({
   eyebrow,
   title,
   description,
+  eyebrowclassName = "",
   titleclassName = "",
   descriptionclassName = "",
   align = "center",
@@ -14,7 +15,9 @@ const HomeSectionHeader = ({
           : "items-start text-left"
       }`}
     >
-      <p className="text-sm font-['Inter'] font-medium uppercase text-[#F3FE00]">
+      <p
+        className={`text-sm font-['Inter'] font-medium uppercase text-[#F3FE00] ${eyebrowclassName}`}
+      >
         {eyebrow}
       </p>
       <h2
