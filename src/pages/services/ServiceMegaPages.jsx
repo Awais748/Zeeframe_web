@@ -177,10 +177,10 @@ const ServicePage = () => {
                 {page.impact.badge}
               </p>
               <div className="flex flex-col gap-4">
-                <h2 className="text-white font-['Geologica'] sm:text-[40px] text-[28px] sm:leading-12 leading-8 font-bold sm:w-[494px] w-full">
+                <h2 className="text-white font-['Geologica'] sm:text-[40px] text-[28px] sm:leading-12 leading-8 font-bold sm:w-123.5 w-full">
                   {page.impact.heading}
                 </h2>
-                <p className="text-[#BDBDBD] font-['Inter'] text-sm sm:w-[570px] leading-[21px]">
+                <p className="text-[#BDBDBD] font-['Inter'] text-sm sm:w-142.5 leading-5.25">
                   {page.impact.description}
                 </p>
               </div>
@@ -208,7 +208,7 @@ const ServicePage = () => {
             <h2 className="text-[#F3FE00]  font-['Geologica'] text-sm text-center uppercase tracking-widest">
               {page.process.badge}
             </h2>
-            <p className="text-white  font-['Geologica'] sm:w-[677px] w-full sm:mx-auto sm:text-[40px] text-[28px] font-bold flex justify-center text-center sm:leading-12">
+            <p className="text-white  font-['Geologica'] sm:w-169.25 w-full sm:mx-auto sm:text-[40px] text-[28px] font-bold flex justify-center text-center sm:leading-12">
               {page.process.heading}
             </p>
             <div className="grid md:grid-cols-2 sm:mt-12 mt-4 lg:grid-cols-4 gap-5">
@@ -227,10 +227,10 @@ const ServicePage = () => {
                       {iconMap[step.icon]}
                     </div>
                     <div className="flex flex-col gap-2 relative z-10">
-                      <h3 className="text-lg mb-3 font-['Geologica'] text-white group-hover:text-black leading-[21px] font-semibold">
+                      <h3 className="text-lg mb-3 font-['Geologica'] text-white group-hover:text-black leading-5.25 font-semibold">
                         {step.title}
                       </h3>
-                      <p className="font-['Inter'] text-[#BDBDBD] text-sm group-hover:text-black leading-[21px]">
+                      <p className="font-['Inter'] text-[#BDBDBD] text-sm group-hover:text-black leading-5.25">
                         {step.description}
                       </p>
                     </div>
@@ -247,7 +247,7 @@ const ServicePage = () => {
         <div className="container">
           <div className="flex sm:flex-row flex-col items-start gap-12">
             {/* Left — accordion */}
-            <div className="flex flex-col gap-6 w-full sm:max-w-[659px]">
+            <div className="flex flex-col gap-6 w-full sm:max-w-164.75">
               <h2 className="text-white sm:text-[40px] text-[28px] font-bold sm:leading-12">
                 {page.why_us.heading}
               </h2>
@@ -262,7 +262,7 @@ const ServicePage = () => {
                     </span>
 
                     <div className="flex flex-col gap-2">
-                      <p className="text-base text-white font-semibold leading-[21px]">
+                      <p className="text-base text-white font-semibold leading-5.25">
                         {point.title}
                       </p>
 

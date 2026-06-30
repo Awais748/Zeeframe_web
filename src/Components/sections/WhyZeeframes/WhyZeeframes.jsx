@@ -1,23 +1,12 @@
 import SectionHeader from "../../ui/SectionHeader";
-
-const imgFrame5 =
-  "https://www.figma.com/api/mcp/asset/92275564-5dd5-4cca-a79a-d90ff9df0692";
-const imgFrame4 =
-  "https://www.figma.com/api/mcp/asset/70da89ca-0bff-46a1-b165-ff1fa26533b0";
-const imgFrame3 =
-  "https://www.figma.com/api/mcp/asset/1d45b17d-07dc-4526-ae4d-59cce9b03dbf";
-const imgFrame2 =
-  "https://www.figma.com/api/mcp/asset/ea827559-2588-466b-a5a2-0590281f8432";
-const imgFrame1 =
-  "https://www.figma.com/api/mcp/asset/3aa6f634-949e-41c6-9f10-ad4d18f50904";
-const imgFrame =
-  "https://www.figma.com/api/mcp/asset/269bc56b-b51a-461b-a3ea-cfbf1afd214a";
-const imgGlassKnot =
-  "https://www.figma.com/api/mcp/asset/51b53cbe-4717-444f-bdd2-935e140c97cd";
-const imgVector =
-  "https://www.figma.com/api/mcp/asset/e9e10a21-53ec-4c6e-aaa6-410bd260f87a";
-const imgArrowUpRight =
-  "https://www.figma.com/api/mcp/asset/fc1603eb-f373-4819-868f-2b1a47c0d493";
+import imgArrowUpRight from "../../../assets/images/imgArrowUpRight.svg";
+import imgGlassKnot from "../../../assets/images/glass-knot.png";
+import imgFrame from "../../../assets/images/imgFrame.svg";
+import imgFrame1 from "../../../assets/images/imgframe1.svg";
+import imgFrame2 from "../../../assets/images/imgFrame2.svg";
+import imgFrame3 from "../../../assets/images/imgFrame3.svg";
+import imgFrame4 from "../../../assets/images/imgFrame4.svg";
+import imgFrame5 from "../../../assets/images/imgframe5.svg";
 
 const WHY_CELLS = [
   {

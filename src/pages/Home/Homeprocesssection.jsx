@@ -1,4 +1,4 @@
-import { useRef, useState, useEffect } from "react";
+import { useRef, useState } from "react";
 import { motion, useScroll, useTransform } from "framer-motion";
 import { useMotionValueEvent } from "framer-motion";
 import HomeSectionHeader from "../../Components/ui/HomeHeader";
@@ -61,10 +61,16 @@ const processSteps = [
   },
 ];
 
-const ExecutionSection = ({ tag, title, image }) => {
+// How dim an inactive item is (0 = fully invisible, 1 = fully bright)
+const MIN_OPACITY = 0.35;
+// Vertical distance (px) over which the fade happens — bigger = smoother/slower fade
+const FADE_RANGE = 160;
+
+const ExecutionSection = () => {
   const containerRef = useRef(null);
   const itemRefs = useRef([]);
-  const [activeIndex, setActiveIndex] = useState(null);
+  const [activeIndex, setActiveIndex] = useState(-1);
+  const [opacities, setOpacities] = useState(processSteps.map(() => MIN_OPACITY));
 
   const { scrollYProgress } = useScroll({
     target: containerRef,
@@ -79,19 +85,40 @@ const ExecutionSection = ({ tag, title, image }) => {
     const containerHeight = containerRef.current.offsetHeight;
     const currentLineHeight = progress * containerHeight;
 
-    let newActiveIndex = null;
-
-    itemRefs.current.forEach((item, index) => {
-      if (!item) return;
+    let newActiveIndex = -1;
+    const newOpacities = itemRefs.current.map((item, index) => {
+      if (!item) return MIN_OPACITY;
 
       const itemTop = item.offsetTop;
 
-      if (currentLineHeight >= itemTop) {
+      // Distance of the scroll-line from this item's top.
+      // Positive = line has passed this item (scrolled down past it).
+      // Negative = line hasn't reached this item yet (or has retreated above it).
+      const distance = currentLineHeight - itemTop;
+
+      if (distance >= FADE_RANGE) {
+        // Fully passed this item's threshold — stays highlighted,
+        // even while later items are also becoming active.
         newActiveIndex = index;
+        return 1;
       }
+
+      if (distance <= -FADE_RANGE) {
+        // Line hasn't reached here yet (or scrolled back above it) — stays dim.
+        return MIN_OPACITY;
+      }
+
+      // Within the transition zone around this item's top — smoothly
+      // interpolate based on exact scroll progress. Works both directions:
+      // scrolling down increases it toward 1, scrolling up decreases it
+      // back toward MIN_OPACITY.
+      const t = (distance + FADE_RANGE) / (2 * FADE_RANGE);
+      if (t > 0.5) newActiveIndex = index;
+      return MIN_OPACITY + t * (1 - MIN_OPACITY);
     });
 
     setActiveIndex(newActiveIndex);
+    setOpacities(newOpacities);
   });
 
   return (
@@ -107,8 +134,8 @@ const ExecutionSection = ({ tag, title, image }) => {
           className="relative mx-auto flex max-w-7xl gap-20 sm:px-6 sm:py-24 py-8 md:flex-row flex-col"
         >
           <div className="relative md:w-1/2 w-full">
-            {/* Line */}
-            <div className="absolute left-0 top-0 h-full w-0.5  md:block hidden">
+            {/* Line - grey track (default) + yellow fill (progress) */}
+            <div className="absolute left-0 top-0 h-full w-0.5 bg-[#3C3C3C] md:block hidden">
               <motion.div
                 style={{ height: lineHeight }}
                 className="w-full bg-[#F3FE00]"
@@ -124,7 +151,11 @@ const ExecutionSection = ({ tag, title, image }) => {
                   <div
                     key={index}
                     ref={(el) => (itemRefs.current[index] = el)}
-                    className="relative transition-all duration-300"
+                    className="relative"
+                    style={{
+                      opacity: opacities[index],
+                      transition: "opacity 0.1s linear",
+                    }}
                   >
                     {/* NUMBER – LEFT OF LINE */}
                     {isActive && (
@@ -134,35 +165,20 @@ const ExecutionSection = ({ tag, title, image }) => {
                     )}
                     <div className="flex gap-1.5">
                       {/* NUMBER FOR MOBILE */}
-                      <div className="md:hidden block text-base font-medium text-[#FFF] mb-2">
+                      <div className="md:hidden block text-base font-medium text-white mb-2">
                         {String(step.id).padStart(2, "0")}
                       </div>
                       {/* CONTENT */}
-                      <h3
-                        className={`text-[19px] font-semibold ff_geologica transition-colors duration-300 md:text-[19px] text-xl
-            ${isActive ? "text-white" : "text-[#8F8F8F]"} md:${
-                          isActive ? "text-white" : "text-[#8F8F8F]"
-                        } text-white`}
-                      >
+                      <h3 className="text-[19px] font-semibold ff_geologica text-xl md:text-[19px] text-white">
                         {step.title.replace(/^\d+\s/, "")}
                       </h3>
                     </div>
 
-                    <p
-                      className={`mt-1 transition-colors duration-300 md:text-lg text-base
-            ${isActive ? "text-white" : "text-[#8F8F8F]"} md:${
-                        isActive ? "text-white" : "text-[#8F8F8F]"
-                      } text-gray-300`}
-                    >
+                    <p className="mt-1 md:text-lg text-base text-white">
                       {step.subtitle}
                     </p>
 
-                    <p
-                      className={`mt-3 max-w-md text-sm transition-colors duration-300 md:text-sm text-sm
-            ${isActive ? "text-white" : "text-[#8F8F8F]"} md:${
-                        isActive ? "text-white" : "text-[#8F8F8F]"
-                      } text-gray-400`}
-                    >
+                    <p className="mt-3 max-w-md text-sm text-white">
                       {step.description}
                     </p>
 
@@ -182,7 +198,7 @@ const ExecutionSection = ({ tag, title, image }) => {
 
           {/* RIGHT STICKY IMAGE - DESKTOP ONLY */}
           <div className="sticky top-30 h-126 w-132 md:block hidden">
-            {activeIndex !== null && (
+            {activeIndex >= 0 && (
               <motion.img
                 key={activeIndex}
                 src={processSteps[activeIndex].image}

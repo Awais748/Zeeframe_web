@@ -1,26 +1,20 @@
 import { useState } from "react";
-
-const imgImage =
-  "https://www.figma.com/api/mcp/asset/0298ba38-d980-4a2d-b199-dd623018564a";
-const imgImage1 =
-  "https://www.figma.com/api/mcp/asset/920c3d0b-6f9b-47d7-af5f-2773614fd997";
-const imgImage2 =
-  "https://www.figma.com/api/mcp/asset/1729f92e-16f1-4af4-9bd4-ccfd51264212";
-const imgArrow =
-  "https://www.figma.com/api/mcp/asset/569c577f-5a25-4617-b053-e39587695373";
-const imgDot =
-  "https://www.figma.com/api/mcp/asset/1d6bfe1a-0ae6-48b0-8a92-bd13081142ca";
+import imgArrow from "../../../assets/images/insightimgarrow.svg";
+import imgDot from "../../../assets/images/insightimgdot.svg";
+import img1 from "../../../assets/images/insightcard1.png";
+import img2 from "../../../assets/images/insightcard2.png";
+import img3 from "../../../assets/images/insightcard3.png";
 
 const CARDS = [
   {
-    img: imgImage,
+    img: img1,
     title: "20+ GenAI UX patterns, examples and implementation tactics",
     desc: "A shared language for product teams to build usable, intelligent and safe GenAI experiences.",
     readTime: "7 min read",
     date: "Jan 23, 2025",
   },
   {
-    img: imgImage1,
+    img: img2,
     title:
       "Skipping Figma, human after all, Figma grid, accessibility as an afterthought",
     desc: "Weekly curated resources for designers — thinkers and makers.",
@@ -28,7 +22,7 @@ const CARDS = [
     date: "Jan 23, 2025",
   },
   {
-    img: imgImage2,
+    img: img3,
     title: "Is your creative character being sacrificed to Algorithm, Inc.?",
     desc: "AI is changing how we work. Here's why and how we must preserve the human spirit that drives...",
     readTime: "7 min read",

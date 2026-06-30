@@ -1,13 +1,9 @@
-const imgNorthAmerica =
-  "https://www.figma.com/api/mcp/asset/e342b11a-f829-41fe-9547-b54deed12e58";
-const imgEurope =
-  "https://www.figma.com/api/mcp/asset/c6a8b75d-324d-4311-bc4d-0458d1404666";
-const imgAsia =
-  "https://www.figma.com/api/mcp/asset/36989dc1-6583-45f2-9516-a5e41a4d994b";
-
+import northimg from "../../../assets/images/northimg.png";
+import europeimg from "../../../assets/images/europeimg.png";
+import asiaimg from "../../../assets/images/Asiaimg.png";
 const LOCATIONS = [
   {
-    icon: imgNorthAmerica,
+    icon: northimg,
     iconInset: "inset-[2.24%_17.28%_2.25%_17.28%]",
     region: "North America",
     address: "1832 Norfolk st Houston Texas 77098",
@@ -19,7 +15,7 @@ const LOCATIONS = [
     opacity: "",
   },
   {
-    icon: imgEurope,
+    icon: europeimg,
     iconInset: "inset-[0_15.4%]",
     region: "Europe",
     address: "West Tower, 371 Deansgate, Manchester M15 4UP, United Kingdom",
@@ -31,7 +27,7 @@ const LOCATIONS = [
     opacity: "",
   },
   {
-    icon: imgAsia,
+    icon: asiaimg,
     iconInset: "inset-[4.34%_-0.12%_4.3%_0.1%]",
     region: "Asia",
     address: "144/2, Block B, Bankers Society Near DHA Phase 4, Lahore, 54792",

@@ -11,6 +11,10 @@ const tabIds = {
   "Why Zeeframes": "why-zeeframes",
 };
 
+// Navbar height (~73px) + StickyTabs bar height (~80-90px) combined,
+// so section headings don't get hidden underneath the sticky bars.
+const STICKY_OFFSET = 160;
+
 export default function StickyTabs({ tabs }) {
   const [activeTab, setActiveTab] = useState(tabs[0]);
   const [mobileOpen, setMobileOpen] = useState(false);
@@ -18,7 +22,7 @@ export default function StickyTabs({ tabs }) {
 
   useEffect(() => {
     const handleScroll = () => {
-      const scrollPosition = window.scrollY + 160;
+      const scrollPosition = window.scrollY + STICKY_OFFSET;
       let currentActive = activeTab;
       for (const tab of tabs) {
         const element = document.getElementById(tabIds[tab]);
@@ -39,7 +43,7 @@ export default function StickyTabs({ tabs }) {
     const element = document.getElementById(tabIds[tab]);
     if (element) {
       const absoluteTop = element.getBoundingClientRect().top + window.scrollY;
-      window.scrollTo({ top: absoluteTop - 140, behavior: "smooth" });
+      window.scrollTo({ top: absoluteTop - STICKY_OFFSET, behavior: "smooth" });
     }
   };
 
@@ -52,7 +56,7 @@ export default function StickyTabs({ tabs }) {
   return (
     <div
       ref={containerRef}
-      className="sticky top-[92px] z-[90] w-full bg-[#0b0b0b] p-2"
+      className="sticky top-[73px] z-[90] w-full bg-[#0b0b0b] p-2"
     >
       {/* ── Desktop tabs ── */}
       <div className="hidden min-[1100px]:block">
