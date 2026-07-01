@@ -1,5 +1,5 @@
 import { useState } from "react";
-import data from "./deliverables.json";
+import data from "./Deliverables.json";
 import { MainCard, ExtraCard, DeliverableCard, icons } from "./Deliverablesui";
 
 const { tabs, deliverablesByTab } = data;
