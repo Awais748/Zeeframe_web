@@ -3,9 +3,9 @@ import imgArrowUpRight from "../../../assets/images/imgArrowUpRight.svg";
 import imgGlassKnot from "../../../assets/images/glass-knot.png";
 import imgFrame from "../../../assets/images/imgFrame.svg";
 import imgFrame1 from "../../../assets/images/imgframe1.svg";
-import imgFrame2 from "../../../assets/images/imgFrame2.svg";
-import imgFrame3 from "../../../assets/images/imgFrame3.svg";
-import imgFrame4 from "../../../assets/images/imgFrame4.svg";
+import imgFrame2 from "../../../assets/images/imgframe2.svg";
+import imgFrame3 from "../../../assets/images/imgframe3.svg";
+import imgFrame4 from "../../../assets/images/imgframe4.svg";
 import imgFrame5 from "../../../assets/images/imgframe5.svg";
 
 const WHY_CELLS = [
