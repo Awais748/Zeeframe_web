@@ -11,7 +11,7 @@ const ServicesSection = ({ tag, title, image }) => {
           title="Our Services"
           description="Designs with Exceptional User Experiences."
         />
-        <div className="grid grid-cols-1 md:grid-cols-2 sm:mt-16 mt-8">
+        <div className="cursor-pointer grid grid-cols-1 md:grid-cols-2 gap-x-15 gap-y-6 sm:mt-16 mt-8">
           <ServiceCard
             tag="For Digital Experiences"
             title="UX UI Design"

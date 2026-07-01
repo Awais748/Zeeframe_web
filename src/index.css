@@ -41,15 +41,22 @@ body {
   display: flex;
   gap: 2rem;
   width: max-content;
-  animation: logo-scroll 10s linear infinite;
+  animation: logo-scroll 18s linear infinite;
 }
-
 .team-slider {
   display: flex;
   width: max-content;
-  animation: logo-scroll 30s linear infinite;
+  animation: logo-scroll 45s linear infinite;
 }
 
+@keyframes logo-scroll {
+  from {
+    transform: translateX(0);
+  }
+  to {
+    transform: translateX(-50%);
+  }
+}
 /* Logos */
 .logo-track img {
   width: auto;

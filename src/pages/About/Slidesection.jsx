@@ -28,7 +28,7 @@ const SliderSection = () => {
       />
 
       <div className="overflow-hidden relative">
-        <div className="flex gap-2 mt-16 team-slider animate-logo-scroll">
+        <div className="flex gap-2 mt-16 team-slider ">
           {[...logos, ...logos].map((logo, index) => (
             <img
               key={index}

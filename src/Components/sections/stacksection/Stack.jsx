@@ -6,7 +6,7 @@ import penpotImg from "../../../assets/images/penpot.png";
 import sketchImg from "../../../assets/images/sketch.png";
 import axureImg from "../../../assets/images/axure.png";
 import protopieImg from "../../../assets/images/protopie.png";
-import adobexdImg from "../../../assets/images/adobexd.png";
+import adobexdImg from "../../../assets/images/AdobeXd.png";
 
 const TABS = [
   "UI/UX Design",

@@ -8,7 +8,7 @@ module.exports = {
         },
       },
       animation: {
-        "logo-scroll": "logoScroll 20s linear infinite",
+        "logo-scroll": "logoScroll 45s linear infinite",
       },
     },
   },

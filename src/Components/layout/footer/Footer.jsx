@@ -23,11 +23,11 @@ const COMPANY_LINKS = [
 ];
 
 const SERVICE_LINKS = [
-  { text: "UX UI Design", path: "/services/ux-ui-design" },
-  { text: "UX Research", path: "/services/ux-research" },
-  { text: "Design System", path: "/services/design-system" },
-  { text: "Web App Design", path: "/services/web-app-design" },
-  { text: "Mobile App Design", path: "/services/mobile-app-design" },
+  { text: "UX UI Design", path: "/services/ui-ux-consulting" },
+  { text: "UX Research", path: "/services/ux-research-insights" },
+  { text: "Design System", path: "/services/design-systems-guidelines" },
+  { text: "Web App Design", path: "/services/web-design" },
+  { text: "Mobile App Design", path: "/services/mobile-design" },
 ];
 
 const INDUSTRY_LINKS = [
@@ -121,7 +121,7 @@ function SocialBtn({ img, label, href }) {
       target="_blank"
       rel="noopener noreferrer"
       aria-label={label}
-      className="w-10 h-10 rounded-full flex items-center justify-center overflow-hidden shrink-0 transition-opacity duration-200 hover:opacity-70"
+      className="w-10 h-10  flex items-center justify-center overflow-hidden shrink-0 transition-opacity duration-200 hover:opacity-70"
     >
       <img src={img} alt={label} className="w-6 h-6 object-contain" />
     </a>
@@ -243,7 +243,7 @@ export default function Footer() {
             </Link>
 
             {/* Socials */}
-            <div className="flex items-center gap-3 sm:gap-4">
+            <div className="flex items-center  gap-3 sm:gap-5">
               {SOCIALS.map((s) => (
                 <SocialBtn key={s.label} {...s} />
               ))}

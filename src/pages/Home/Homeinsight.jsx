@@ -1,5 +1,5 @@
 import { Button } from "../../Components/ui/Button";
-import imgArrow from "../../assets/images/insightimgarrow.svg";
+import imgArrow from "../../assets/images/insightarrow.svg";
 import imgDot from "../../assets/images/insightimgdot.svg";
 import img1 from "../../assets/images/insightcard1.png";
 import img2 from "../../assets/images/insightcard2.png";
@@ -55,17 +55,16 @@ export default function Homeinsights() {
 
             {/* Button — blacktrans variant with text swap on hover */}
             <Button
-              variant="blacktrans"
+              variant="yellow"
               size="lg"
-              className="relative overflow-hidden"
+              className="relative overflow-hidden hover:bg-transparent hover:text-white hover:border-yellow transition-all duration-300"
             >
-              {/* Default text */}
               <span className="flex items-center gap-2 group-hover:invisible">
                 Explore More
                 <img src={imgArrow} alt="" className="w-4 h-4 shrink-0" />
               </span>
-              {/* Hover text */}
-              <span className="absolute inset-0 flex items-center justify-center text-white opacity-0 group-hover:opacity-100 transition-opacity duration-150">
+
+              <span className="absolute inset-0 flex items-center justify-center opacity-0 group-hover:opacity-100 transition-opacity duration-150">
                 See More
               </span>
             </Button>

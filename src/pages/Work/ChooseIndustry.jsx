@@ -25,7 +25,7 @@ const ChooseIndustry = () => {
 
   const getTabClasses = (label) => {
     const base =
-      "px-6 py-3 text-base leading-6 font-medium rounded-3xl transition-all duration-300 border";
+      "cursor-pointer  px-6 py-3 text-base leading-6 font-medium rounded-3xl transition-all duration-300 border";
     return selectedIndustry === label
       ? `${base} bg-[rgba(255,255,255,0.90)] text-[#0D0D0D] border-[#FFF]`
       : `${base} border-[rgba(60,60,60,0.72)] bg-[#111] text-[#FFF]`;

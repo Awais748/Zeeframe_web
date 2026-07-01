@@ -1,4 +1,5 @@
 import { useMemo } from "react";
+import { Link } from "react-router-dom";
 import HomeSectionHeader from "../../Components/ui/HomeHeader";
 import imgArrow from "../../assets/images/imgarrow.svg";
 import imgEllipse from "../../assets/images/imgEllipse.svg";
@@ -16,6 +17,7 @@ const projects = [
     name: "Bloom Money",
     description: "Empowering communities with financial solutions.",
     categories: ["Fin-Tech", "SaaS"],
+    link: "/work",
   },
   {
     id: 2,
@@ -23,6 +25,7 @@ const projects = [
     name: "Alfan",
     description: "The Platform for Content Creators",
     categories: ["Social Media", "Mar-Tech", "AI"],
+    link: "/work",
   },
   {
     id: 3,
@@ -30,6 +33,7 @@ const projects = [
     name: "Earpoin",
     description: "The Best Place ToFind Productivity Tools",
     categories: ["SaaS", "IT/Consulting", "AI"],
+    link: "/work",
   },
   {
     id: 4,
@@ -37,6 +41,7 @@ const projects = [
     name: "Finnecta",
     description: "Wallet application to streamline digital transactions",
     categories: ["Fin-Tech", "Crypto & Web3"],
+    link: "/work",
   },
   {
     id: 5,
@@ -44,6 +49,7 @@ const projects = [
     name: "Trivo",
     description: "Clearbit, a business intelligence platform",
     categories: ["Enterprise", "IT/Consulting", "AI"],
+    link: "/work",
   },
   {
     id: 6,
@@ -51,6 +57,7 @@ const projects = [
     name: "Fastgo",
     description: "Fastgo's scooter rental app to drive adoption",
     categories: ["Automotive", "Freight & Logistics"],
+    link: "/work",
   },
 ];
 
@@ -73,7 +80,6 @@ export default function Homecreativeshowcase({
         ? projects
         : projects.filter((p) => p.categories.includes(activeCategory));
 
-    // Agar koi match na ho to bhi khali na rahe, saare projects shuffled dikha do
     const finalList = matched.length > 0 ? matched : projects;
 
     return shuffleArray(finalList);
@@ -120,7 +126,11 @@ export default function Homecreativeshowcase({
                       {project.description}
                     </p>
                   </div>
-                  <div className="relative border border-[#b8b8b8] rounded-full p-1 flex items-center shrink-0 overflow-hidden w-8 h-8">
+                  <Link
+                    to={project.link || "/work"}
+                    aria-label={`View ${project.name} project`}
+                    className="relative border border-[#b8b8b8] rounded-full p-1 flex items-center shrink-0 overflow-hidden w-8 h-8 cursor-pointer   transition-colors duration-300"
+                  >
                     <img
                       src={imgEllipse}
                       alt=""
@@ -129,10 +139,10 @@ export default function Homecreativeshowcase({
                     />
                     <img
                       src={imgArrow}
-                      alt="View project"
-                      className="relative z-10 w-6 h-6 object-contain"
+                      alt=""
+                      className="relative z-10 w-6 h-6 object-contain pointer-events-none"
                     />
-                  </div>
+                  </Link>
                 </div>
               </div>
             ))}
@@ -158,7 +168,11 @@ export default function Homecreativeshowcase({
                       {project.description}
                     </p>
                   </div>
-                  <div className="relative border border-[#b8b8b8] rounded-full p-1 flex items-center shrink-0 overflow-hidden w-8 h-8">
+                  <Link
+                    to={project.link || "/work"}
+                    aria-label={`View ${project.name} project`}
+                    className="relative border border-[#b8b8b8] rounded-full p-1 flex items-center shrink-0 overflow-hidden w-8 h-8 cursor-pointer  transition-colors duration-300"
+                  >
                     <img
                       src={imgEllipse}
                       alt=""
@@ -167,10 +181,10 @@ export default function Homecreativeshowcase({
                     />
                     <img
                       src={imgArrow}
-                      alt="View project"
-                      className="relative z-10 w-6 h-6 object-contain"
+                      alt=""
+                      className="relative z-10 w-6 h-6 object-contain pointer-events-none"
                     />
-                  </div>
+                  </Link>
                 </div>
               </div>
             ))}
@@ -197,7 +211,11 @@ export default function Homecreativeshowcase({
                     {project.description}
                   </p>
                 </div>
-                <div className="hidden sm:flex relative border border-[#b8b8b8] rounded-full p-1 items-center shrink-0 overflow-hidden w-8 h-8">
+                <Link
+                  to={project.link || "/work"}
+                  aria-label={`View ${project.name} project`}
+                  className="flex relative border border-[#b8b8b8] rounded-full p-1 items-center shrink-0 overflow-hidden w-8 h-8 cursor-pointer  transition-colors duration-300"
+                >
                   <img
                     src={imgEllipse}
                     alt=""
@@ -206,10 +224,10 @@ export default function Homecreativeshowcase({
                   />
                   <img
                     src={imgArrow}
-                    alt="View project"
-                    className="relative z-10 w-6 h-6 object-contain"
+                    alt=""
+                    className="relative z-10 w-6 h-6 object-contain pointer-events-none"
                   />
-                </div>
+                </Link>
               </div>
             </div>
           ))}
