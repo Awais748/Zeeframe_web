@@ -1,17 +1,10 @@
-const imgNoise =
-  "https://www.figma.com/api/mcp/asset/76dbde0c-ef89-42bc-8ae3-539758899543";
-const img002 =
-  "https://www.figma.com/api/mcp/asset/fbfe7bb5-c436-42b5-ac1d-44e9d9edb53c";
-const imgEllipse4 =
-  "https://www.figma.com/api/mcp/asset/096023d4-a28f-43c3-a918-db974146eb00"; // large yellow-green glow left
-const imgEllipse7 =
-  "https://www.figma.com/api/mcp/asset/8144e552-ea12-4714-b68b-5d66217c0fa0"; // small glow top-right
-const imgEllipse5 =
-  "https://www.figma.com/api/mcp/asset/5e539236-1ce6-4a30-8360-c28e65710aed"; // small glow top-left
-const imgEllipse6 =
-  "https://www.figma.com/api/mcp/asset/d66b6ac5-a04f-4daa-8a06-ab4534fbfe02"; // glow bottom-left
-const imgArrow =
-  "https://www.figma.com/api/mcp/asset/fca2080f-b1e4-454c-9786-528a552aeb91";
+import imgNoise from "../../../assets/images/imgnoise.png";
+import img002 from "../../../assets/images/img002.gif";
+import imgEllipse4 from "../../../assets/images/imgEllipse4.svg";
+import imgEllipse5 from "../../../assets/images/imgEllipse5.svg";
+import imgEllipse7 from "../../../assets/images/imgEllipse7.svg";
+import imgEllipse6 from "../../../assets/images/imgEllipse6.svg";
+import imgArrow from "../../../assets/images/imgarrowstart.svg";
 
 export default function StartProject() {
   return (

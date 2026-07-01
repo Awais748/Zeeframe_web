@@ -139,12 +139,11 @@ export default function OurInsights() {
               <img
                 src={imgArrow}
                 alt=""
-                className="w-4 h-4 shrink-0 group-hover:invisible"
+                className=" w-4 h-4 shrink-0 group-hover:invisible"
               />
             </button>
           </div>
 
-          {/* Cards — items-start so cards don't stretch each other */}
           <div className="flex gap-6 items-start w-full max-lg:flex-col">
             {CARDS.map((card) => (
               <BlogCard key={card.title} {...card} />

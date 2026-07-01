@@ -36,8 +36,8 @@ export default function Homeinsights() {
       <div className="container">
         <div className="flex flex-col gap-12 w-full">
           {/* Header */}
-          <div className="flex items-start justify-between gap-6 max-sm:flex-col max-sm:gap-4">
-            <div className="flex flex-col gap-8">
+          <div className="flex items-start justify-between gap-6 max-sm:flex-col max-sm:items-center max-sm:text-center">
+            <div className="flex flex-col gap-8 max-sm:items-center">
               <p className="text-[#F3FE00] text-[14px] font-['Inter'] font-medium uppercase leading-normal m-0">
                 Our Insights
               </p>
@@ -45,7 +45,7 @@ export default function Homeinsights() {
                 className="text-white m-0 font-bold max-w-[510px] max-sm:text-[28px] max-sm:leading-[36px]"
                 style={{
                   fontFamily: "'Geologica', sans-serif",
-                  fontSize: 40,
+                  fontSize: 30,
                   lineHeight: "40px",
                 }}
               >
@@ -53,11 +53,10 @@ export default function Homeinsights() {
               </h2>
             </div>
 
-            {/* Button — blacktrans variant with text swap on hover */}
             <Button
               variant="yellow"
               size="lg"
-              className="relative overflow-hidden hover:bg-transparent hover:text-white hover:border-yellow transition-all duration-300"
+              className="relative overflow-hidden hover:bg-transparent hover:text-white hover:border-yellow transition-all duration-300 max-sm:rounded-4xl max-sm:bg-white max-sm:text-black max-sm:border-white"
             >
               <span className="flex items-center gap-2 group-hover:invisible">
                 Explore More

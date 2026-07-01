@@ -82,7 +82,7 @@ export default function Process({ id }) {
               aria-label={card.title}
               className="
                 group bg-white flex flex-col justify-between
-                p-6 min-h-[399px] flex-1
+                p-6 min-h-[399px] flex-1 min-w-0
                 border-r border-[#cdcdcd]
                 transition-colors duration-300 hover:bg-[#e7e5e4] cursor-pointer
                 max-[1024px]:border-b max-[1024px]:last:border-r-0
@@ -124,13 +124,14 @@ export default function Process({ id }) {
             </article>
           ))}
 
-          {/* ── CTA card ── */}
+          {/* ── CTA card — fixed width so process cards don't over-stretch ── */}
           <article
             aria-label="Start your project"
             className="
-              flex-1 flex flex-col overflow-hidden rounded-r-[14px]
+              w-[300px] shrink-0 flex flex-col overflow-hidden rounded-r-[14px]
               min-h-[399px]
-              max-[1024px]:col-span-2 max-[640px]:col-span-1 max-[640px]:rounded-none max-[640px]:rounded-b-[14px]
+              max-[1024px]:w-auto max-[1024px]:col-span-2
+              max-[640px]:col-span-1 max-[640px]:rounded-none max-[640px]:rounded-b-[14px]
             "
           >
             {/* BG image — fills remaining space */}
