@@ -21,6 +21,7 @@ function App() {
 
   return (
     <>
+     
       <Navbar />
       <ScrollToTop />
       <Routes>

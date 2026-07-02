@@ -7,9 +7,12 @@ import HomeDesignthatthink from "./HomeDesignthatthink";
 import Homeinsight from "./Homeinsight";
 import FaqsSection from "./FaqsSec";
 import Homecontactsection from "./Homecontactsection";
+import CustomCursor from "../../Components/CustomCursor";
+import WhatsappButton from "../../Components/Whatsapp";
 const Home = () => {
   return (
     <>
+      <CustomCursor />
       <HomeHeroSection />
       <HomeVideo />
       <ServicesSection />
@@ -19,6 +22,7 @@ const Home = () => {
       <FaqsSection />
       <Homeinsight />
       <Homecontactsection />
+      <WhatsappButton />
     </>
   );
 };
